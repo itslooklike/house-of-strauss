@@ -1,4 +1,9 @@
 :root {
+  --blue: #173ab0;
+  --light-text: #edebee;
+}
+
+:root {
   box-sizing: border-box;
 }
 
