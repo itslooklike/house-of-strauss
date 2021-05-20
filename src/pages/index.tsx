@@ -2,9 +2,13 @@ import { styled } from 'linaria/react'
 import type { NextPage } from 'next'
 
 import { Logo } from '~/components/Logo'
+import { Footer } from '~/components/Footer'
+import { CardSmall } from '~/components/CardSmall'
 import { IconFacebook, IconInsta, IconYouTube } from '~/icons'
 
-const Root = styled.div`
+const Root = styled.div``
+
+const Hero = styled.div`
   height: 880px;
   background-color: var(--blue);
   background-image: url('/images/museum-1.jpg');
@@ -46,8 +50,8 @@ const Header = styled.header`
 const NavList = styled.ul`
   display: flex;
   gap: 30px;
-  list-style: none;
   margin-left: auto;
+  list-style: none;
 `
 
 const NavListItem = styled.li`
@@ -79,32 +83,47 @@ const TextRestaurant = styled.div`
 
 const Home: NextPage = () => (
   <Root>
-    <Inner>
-      <Header>
-        <SocialWrap>
-          <IconFacebook />
-          <IconInsta />
-          <IconYouTube />
-        </SocialWrap>
-        <LogoWrap>
-          <Logo />
-        </LogoWrap>
-        <nav>
-          <NavList>
-            <NavListItem>Visit</NavListItem>
-            <NavListItem>More</NavListItem>
-            <NavListItem>News</NavListItem>
-            <NavListItem>Tickets</NavListItem>
-          </NavList>
-        </nav>
-      </Header>
+    <Hero>
+      <Inner>
+        <Header>
+          <SocialWrap>
+            <IconFacebook />
+            <IconInsta />
+            <IconYouTube />
+          </SocialWrap>
+          <LogoWrap>
+            <Logo />
+          </LogoWrap>
+          <nav>
+            <NavList>
+              <NavListItem>Visit</NavListItem>
+              <NavListItem>More</NavListItem>
+              <NavListItem>News</NavListItem>
+              <NavListItem>Tickets</NavListItem>
+            </NavList>
+          </nav>
+        </Header>
 
-      <ContentWrap>
-        <TextMuseum>Museum</TextMuseum>
-        <TextConcerts>Concerts</TextConcerts>
-        <TextRestaurant>Restaurant</TextRestaurant>
-      </ContentWrap>
-    </Inner>
+        <ContentWrap>
+          <TextMuseum>Museum</TextMuseum>
+          <TextConcerts>Concerts</TextConcerts>
+          <TextRestaurant>Restaurant</TextRestaurant>
+        </ContentWrap>
+      </Inner>
+    </Hero>
+
+    <div>
+      House of Strauss offers a unique musical and culinary experience in Vienna, the Capital of
+      Music
+    </div>
+
+    <div>
+      <CardSmall />
+      <CardSmall />
+      <CardSmall />
+    </div>
+
+    <Footer />
   </Root>
 )
 
