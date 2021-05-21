@@ -1,10 +1,7 @@
 import { styled } from 'linaria/react'
 import type { NextPage } from 'next'
-
-import { Logo } from '~/components/Logo'
-import { Footer } from '~/components/Footer'
-import { CardSmall } from '~/components/CardSmall'
-import { IconFacebook, IconInsta, IconYouTube } from '~/icons'
+import { Logo, CardSmall, Socials } from '~/components/atoms'
+import { Footer } from '~/components/malecules'
 
 const Root = styled.div``
 
@@ -30,9 +27,6 @@ const Inner = styled.div`
 `
 
 const SocialWrap = styled.div`
-  display: flex;
-  gap: 10px;
-  align-items: center;
   margin-right: auto;
 `
 
@@ -87,9 +81,7 @@ const Home: NextPage = () => (
       <Inner>
         <Header>
           <SocialWrap>
-            <IconFacebook />
-            <IconInsta />
-            <IconYouTube />
+            <Socials />
           </SocialWrap>
           <LogoWrap>
             <Logo />
