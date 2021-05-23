@@ -1,4 +1,5 @@
 export { CardLarge } from './CardLarge'
+export { CardMedium } from './CardMedium'
 export { CardSmall } from './CardSmall'
 export { Logo } from './Logo'
 export { Socials } from './Socials'

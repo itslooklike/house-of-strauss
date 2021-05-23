@@ -1,0 +1,31 @@
+.root {
+  display: flex;
+  height: 660px;
+  padding-bottom: 90px;
+  padding-left: 70px;
+  background: url('/images/image-kaffe.jpg') 0 0 / cover no-repeat;
+}
+
+.content {
+  max-width: 420px;
+  margin-top: auto;
+}
+
+.title {
+  color: var(--bordeaux);
+}
+
+.subtitle {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  color: var(--bordeaux);
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.link {
+  color: var(--bordeaux);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+}

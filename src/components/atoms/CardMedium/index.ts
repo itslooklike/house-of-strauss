@@ -1,0 +1,1 @@
+export { CardMedium } from './CardMedium'

@@ -1,5 +1,5 @@
 import type { NextPage } from 'next'
-import { Logo, CardSmall, Socials, CardLarge } from '~/components/atoms'
+import { Logo, CardSmall, Socials, CardLarge, CardMedium } from '~/components/atoms'
 import { Footer } from '~/components/malecules'
 import css from './index.module.scss'
 
@@ -41,6 +41,9 @@ const Home: NextPage = () => (
         <CardSmall />
         <CardSmall type="music" />
         <CardSmall type="statue" />
+      </div>
+      <div className={css.mapContainer}>
+        <CardMedium />
       </div>
     </div>
 
