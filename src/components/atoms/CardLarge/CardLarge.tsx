@@ -1,13 +1,8 @@
-import { styled } from 'linaria/react'
-
-const Root = styled.div`
-  height: 485px;
-  background-color: var(--orange);
-`
+import css from './CardLarge.module.scss'
 
 export const CardLarge = () => (
-  <Root>
+  <div className={css.root}>
     <div>Delicacies and Souvenirs</div>
     <div>Shop</div>
-  </Root>
+  </div>
 )

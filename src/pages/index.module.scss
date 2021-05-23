@@ -1,0 +1,69 @@
+.hero {
+  height: 880px;
+  background-color: var(--blue);
+  background-image: url('/images/museum-1.jpg');
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 1556px 880px;
+}
+
+.inner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1360px;
+  height: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 50px 20px 90px;
+}
+
+.socialWrap {
+  margin-right: auto;
+}
+
+.logoWrap {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.navList {
+  display: flex;
+  gap: 30px;
+  margin-left: auto;
+  list-style: none;
+}
+
+.navListItem {
+  color: var(--light-text);
+}
+
+.contentWrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+  color: var(--light-text);
+}
+
+.textMuseum {
+  font-size: 36px;
+  font-family: 'Begum Sans';
+}
+
+.textConcerts {
+  font-size: 68px;
+  font-family: 'Northwell';
+}
+
+.textRestaurant {
+  font-size: 28px;
+  font-family: 'Sign Maker JNL';
+}

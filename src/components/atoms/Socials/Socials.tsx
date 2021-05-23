@@ -1,18 +1,10 @@
-import { styled } from 'linaria/react'
-
 import { IconFacebook, IconInsta, IconYouTube } from '~/icons'
-
-const Root = styled.div`
-  display: inline-grid;
-  grid-auto-flow: column;
-  gap: 10px;
-  align-items: center;
-`
+import css from './Socials.module.scss'
 
 export const Socials = () => (
-  <Root>
+  <div className={css.root}>
     <IconFacebook />
     <IconInsta />
     <IconYouTube />
-  </Root>
+  </div>
 )

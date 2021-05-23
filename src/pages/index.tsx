@@ -1,108 +1,36 @@
-import { styled } from 'linaria/react'
 import type { NextPage } from 'next'
 import { Logo, CardSmall, Socials } from '~/components/atoms'
 import { Footer } from '~/components/malecules'
-
-const Root = styled.div``
-
-const Hero = styled.div`
-  height: 880px;
-  background-color: var(--blue);
-  background-image: url('/images/museum-1.jpg');
-  background-repeat: no-repeat;
-  background-position: top right;
-  background-size: 1556px 880px;
-`
-
-const Inner = styled.div`
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  max-width: 1360px;
-  height: 100%;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 50px 20px 90px;
-`
-
-const SocialWrap = styled.div`
-  margin-right: auto;
-`
-
-const LogoWrap = styled.div`
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-`
-
-const Header = styled.header`
-  display: flex;
-  align-items: center;
-`
-
-const NavList = styled.ul`
-  display: flex;
-  gap: 30px;
-  margin-left: auto;
-  list-style: none;
-`
-
-const NavListItem = styled.li`
-  color: var(--light-text);
-`
-
-const ContentWrap = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: auto;
-  color: var(--light-text);
-`
-
-const TextMuseum = styled.div`
-  font-size: 36px;
-  font-family: 'Begum Sans';
-`
-
-const TextConcerts = styled.div`
-  font-size: 68px;
-  font-family: 'Northwell';
-`
-
-const TextRestaurant = styled.div`
-  font-size: 28px;
-  font-family: 'Sign Maker JNL';
-`
+import css from './index.module.scss'
 
 const Home: NextPage = () => (
-  <Root>
-    <Hero>
-      <Inner>
-        <Header>
-          <SocialWrap>
+  <div>
+    <div className={css.hero}>
+      <div className={css.inner}>
+        <div className={css.header}>
+          <div className={css.socialWrap}>
             <Socials />
-          </SocialWrap>
-          <LogoWrap>
+          </div>
+          <div className={css.logoWrap}>
             <Logo />
-          </LogoWrap>
+          </div>
           <nav>
-            <NavList>
-              <NavListItem>Visit</NavListItem>
-              <NavListItem>More</NavListItem>
-              <NavListItem>News</NavListItem>
-              <NavListItem>Tickets</NavListItem>
-            </NavList>
+            <ul className={css.navList}>
+              <li className={css.navListItem}>Visit</li>
+              <li className={css.navListItem}>More</li>
+              <li className={css.navListItem}>News</li>
+              <li className={css.navListItem}>Tickets</li>
+            </ul>
           </nav>
-        </Header>
+        </div>
 
-        <ContentWrap>
-          <TextMuseum>Museum</TextMuseum>
-          <TextConcerts>Concerts</TextConcerts>
-          <TextRestaurant>Restaurant</TextRestaurant>
-        </ContentWrap>
-      </Inner>
-    </Hero>
+        <div className={css.contentWrap}>
+          <div className={css.textMuseum}>Museum</div>
+          <div className={css.textConcerts}>Concerts</div>
+          <div className={css.textRestaurant}>Restaurant</div>
+        </div>
+      </div>
+    </div>
 
     <div>
       House of Strauss offers a unique musical and culinary experience in Vienna, the Capital of
@@ -116,7 +44,7 @@ const Home: NextPage = () => (
     </div>
 
     <Footer />
-  </Root>
+  </div>
 )
 
 export default Home

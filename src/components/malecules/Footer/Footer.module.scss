@@ -1,0 +1,90 @@
+@import '~/utils/mixins.scss';
+
+.root {
+  background-color: var(--red);
+}
+
+.inner {
+  display: grid;
+  grid-gap: 40px 30px;
+  grid-template-columns: 250px auto 1fr;
+  box-sizing: border-box;
+  max-width: 1360px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 60px 20px 60px;
+  background: url('/images/violin-contur.svg') top 60px right 20px / 167px 190px no-repeat;
+
+  @include mediaMaxMd {
+    grid-gap: 0 30px;
+    grid-template-columns: auto 1fr;
+    background-position: bottom 30px right 40px;
+    background-size: 122px 138px;
+  }
+}
+
+.info {
+  display: grid;
+  gap: 10px;
+  align-self: start;
+  max-width: 170px;
+
+  @include mediaMaxMd {
+    grid-column: span 2;
+  }
+}
+
+.list {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @include mediaMaxMd {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+}
+
+.listLink {
+  color: var(--light-text);
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.bottomSlot {
+  @include mediaMaxMd {
+    grid-column: span 2;
+  }
+}
+
+.textMain {
+  margin: 0;
+  color: var(--light-text);
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.textLight {
+  margin: 0;
+  color: var(--light-text);
+  font-size: 14px;
+}
+
+.textMainLink {
+  margin: 0;
+  color: var(--light-text);
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

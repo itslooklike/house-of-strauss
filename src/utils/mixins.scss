@@ -1,0 +1,56 @@
+$mdBreak: 1440px;
+$lgBreak: 1600px;
+$xlBreak: 1920px;
+
+// max-width
+@mixin mediaMaxMd {
+  @media (max-width: $mdBreak) {
+    @content;
+  }
+}
+
+@mixin mediaMaxLg {
+  @media (max-width: $lgBreak) {
+    @content;
+  }
+}
+
+@mixin mediaMaxXl {
+  @media (max-width: $xlBreak) {
+    @content;
+  }
+}
+// --
+
+// min-width
+@mixin mediaMinMB {
+  @media (min-width: $mdBreak + 1px) {
+    @content;
+  }
+}
+
+@mixin mediaMinLg {
+  @media (min-width: $lgBreak + 1px) {
+    @content;
+  }
+}
+
+@mixin mediaMinXl {
+  @media (min-width: $xlBreak + 1px) {
+    @content;
+  }
+}
+// --
+
+@mixin tagReset {
+  margin: 0;
+  padding: 0;
+  color: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  line-height: inherit;
+  background-color: transparent;
+  border: 0;
+  outline: none;
+  text-decoration: none;
+}

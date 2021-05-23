@@ -1,6 +1,5 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 const withPlugins = require('next-compose-plugins')
-const withLinaria = require('next-linaria')
 
 const withSVGr = {
   webpack(config) {
@@ -13,6 +12,6 @@ const withSVGr = {
   },
 }
 
-const config = withPlugins([[withSVGr], [withLinaria]])
+const config = withPlugins([[withSVGr]])
 
 module.exports = config
