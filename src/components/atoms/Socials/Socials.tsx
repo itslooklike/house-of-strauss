@@ -10,14 +10,14 @@ type TProps = {
 
 export const Socials = ({ fill, size = 14 }: TProps) => (
   <div className={cx(css.root, fill && css[fill])}>
-    <a href={socials.facebook}>
-      <IconFacebook width={size} height={size} />
+    <a href={socials.facebook} target="_blank" rel="noreferrer">
+      <IconFacebook width={size} />
     </a>
-    <a href={socials.instagram}>
-      <IconInstagram width={size} height={size} />
+    <a href={socials.instagram} target="_blank" rel="noreferrer">
+      <IconInstagram width={size} />
     </a>
-    <a href={socials.youTube}>
-      <IconYouTube width={size} height={size} />
+    <a href={socials.youTube} target="_blank" rel="noreferrer">
+      <IconYouTube width={size} />
     </a>
   </div>
 )

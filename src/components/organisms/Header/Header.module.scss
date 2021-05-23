@@ -20,11 +20,12 @@
 }
 
 .mobileMenu {
-  position: absolute;
-  top: 100%;
+  position: fixed;
+  top: 0;
   right: 0;
   bottom: 0;
   left: 0;
+  z-index: 2;
 }
 
 .socialWrap {
@@ -37,6 +38,9 @@
 
 .menuIconWrap {
   display: none;
+  padding: 0;
+  background-color: transparent;
+  border: 0;
 
   @include mediaMaxMd {
     display: block;
@@ -44,9 +48,14 @@
 }
 
 .logoWrap {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  margin-right: auto;
+  margin-left: auto;
+
+  @include mediaMinMd {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 .navList {
@@ -67,6 +76,6 @@
   margin-left: 20px;
 
   @include mediaMaxMd {
-    margin-left: auto;
+    margin-left: 0px;
   }
 }

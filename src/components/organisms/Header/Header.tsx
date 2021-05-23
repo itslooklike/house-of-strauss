@@ -15,15 +15,15 @@ export const Header = () => {
     <div className={css.header}>
       {show && (
         <div className={css.mobileMenu}>
-          <MenuMobile />
+          <MenuMobile onClick={handleClose} />
         </div>
       )}
       <div className={css.socialWrap}>
         <Socials />
       </div>
-      <div className={css.menuIconWrap} onClick={handleOpen}>
-        <IconMenu />
-      </div>
+      <button type="button" className={css.menuIconWrap} onClick={handleOpen}>
+        <IconMenu width={20} />
+      </button>
       <div className={css.logoWrap}>
         <Logo />
       </div>

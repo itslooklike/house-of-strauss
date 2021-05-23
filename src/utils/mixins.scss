@@ -23,7 +23,7 @@ $xlBreak: 1920px;
 // --
 
 // min-width
-@mixin mediaMinMB {
+@mixin mediaMinMd {
   @media (min-width: $mdBreak + 1px) {
     @content;
   }
@@ -49,8 +49,8 @@ $xlBreak: 1920px;
   font-size: inherit;
   font-family: inherit;
   line-height: inherit;
+  text-decoration: none;
   background-color: transparent;
   border: 0;
   outline: none;
-  text-decoration: none;
 }

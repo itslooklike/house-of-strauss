@@ -1,23 +1,72 @@
 .root {
-  padding: 30px;
+  height: 100%;
+  padding: 25px 20px 30px;
+  color: var(--bordeaux);
   background-color: #fff8ed;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.logoWrap {
+  margin-right: auto;
+  margin-left: auto;
+
+  svg path {
+    fill: var(--bordeaux);
+  }
+}
+
+.content {
+  padding-left: 20px;
+}
+
+.tabs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 45px;
+}
+
+.tab {
+  color: inherit;
+  font-weight: 600;
+  text-decoration: none;
+
+  &.active {
+    $pad: 17px;
+
+    margin-left: -$pad;
+    padding: 7px $pad;
+    border: 1px solid var(--bordeaux);
+  }
 }
 
 .listWrap {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
 }
 
 .list {
   display: grid;
-  gap: 20px;
+  gap: 30px;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
+.listTitle {
+  font-size: 18px;
+  line-height: 24px;
+}
+
 .link {
-  color: var(--bordeaux);
+  color: inherit;
+  font-weight: 600;
   font-size: 18px;
   line-height: 24px;
   text-decoration: none;
@@ -25,4 +74,12 @@
   &:hover {
     text-decoration: underline;
   }
+}
+
+.socialsWrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  padding-top: 35px;
+  border-top: 2px solid var(--bordeaux);
 }
