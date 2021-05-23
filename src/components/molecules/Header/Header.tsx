@@ -1,10 +1,14 @@
 import { Socials, Logo } from '~/components/atoms'
+import { IconMenu } from '~/icons'
 import css from './Header.module.scss'
 
 export const Header = () => (
   <div className={css.header}>
     <div className={css.socialWrap}>
       <Socials />
+    </div>
+    <div className={css.menuIconWrap}>
+      <IconMenu />
     </div>
     <div className={css.logoWrap}>
       <Logo />
@@ -17,5 +21,6 @@ export const Header = () => (
         <li className={css.navListItem}>Tickets</li>
       </ul>
     </nav>
+    <div className={css.langBlock}>En *</div>
   </div>
 )

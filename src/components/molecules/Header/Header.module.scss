@@ -1,3 +1,5 @@
+@import '~/utils/mixins.scss';
+
 .header {
   position: fixed;
   top: 0;
@@ -10,10 +12,27 @@
   margin-right: auto;
   margin-left: auto;
   padding: 40px 20px 20px;
+  color: var(--light-text);
+
+  @include mediaMaxMd {
+    padding: 25px 20px;
+  }
 }
 
 .socialWrap {
   margin-right: auto;
+
+  @include mediaMaxMd {
+    display: none;
+  }
+}
+
+.menuIconWrap {
+  display: none;
+
+  @include mediaMaxMd {
+    display: block;
+  }
 }
 
 .logoWrap {
@@ -27,8 +46,19 @@
   gap: 30px;
   margin-left: auto;
   list-style: none;
+
+  @include mediaMaxMd {
+    display: none;
+  }
 }
 
 .navListItem {
-  color: var(--light-text);
+}
+
+.langBlock {
+  margin-left: 20px;
+
+  @include mediaMaxMd {
+    margin-left: auto;
+  }
 }
