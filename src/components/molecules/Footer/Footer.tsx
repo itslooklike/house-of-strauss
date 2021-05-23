@@ -1,23 +1,6 @@
 import { Socials } from '~/components/atoms'
+import { menu } from '~/utils/config'
 import css from './Footer.module.scss'
-
-const LIST_1 = [
-  { title: 'Tickets', url: '#' },
-  { title: 'Museum', url: '#' },
-  { title: 'Concerts', url: '#' },
-  { title: 'Brasserie', url: '#' },
-  { title: 'Shop', url: '#' },
-  { title: 'Directions', url: '#' },
-]
-
-const LIST_2 = [
-  { title: 'Events', url: '#' },
-  { title: 'Research', url: '#' },
-  { title: 'Masterclasses', url: '#' },
-  { title: 'History', url: '#' },
-  { title: 'About', url: '#' },
-  { title: 'Contact', url: '#' },
-]
 
 export const Footer = () => (
   <footer className={css.root}>
@@ -31,7 +14,7 @@ export const Footer = () => (
       </div>
       <ul className={css.list}>
         <p className={css.textLight}>Visit</p>
-        {LIST_1.map((item, index) => (
+        {menu[0].map((item, index) => (
           <li key={index}>
             <a className={css.listLink} href={item.url}>
               {item.title}
@@ -41,7 +24,7 @@ export const Footer = () => (
       </ul>
       <ul className={css.list}>
         <p className={css.textLight}>More</p>
-        {LIST_2.map((item, index) => (
+        {menu[1].map((item, index) => (
           <li key={index}>
             <a className={css.listLink} href={item.url}>
               {item.title}

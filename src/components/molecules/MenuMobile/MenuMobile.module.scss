@@ -1,0 +1,28 @@
+.root {
+  padding: 30px;
+  background-color: #fff8ed;
+}
+
+.listWrap {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.list {
+  display: grid;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.link {
+  color: var(--bordeaux);
+  font-size: 18px;
+  line-height: 24px;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

@@ -1,7 +1,7 @@
 import type { NextPage } from 'next'
 import { CardSmall, CardLarge, CardMedium } from '~/components/atoms'
-import { Footer, InnerMap, Header } from '~/components/molecules'
-import { Hero, HeroMobile } from '~/components/organisms'
+import { Footer, InnerMap } from '~/components/molecules'
+import { Hero, HeroMobile, Header } from '~/components/organisms'
 import css from './index.module.scss'
 
 const Home: NextPage = () => (
