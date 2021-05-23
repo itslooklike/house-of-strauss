@@ -67,3 +67,29 @@
   font-size: 28px;
   font-family: 'Sign Maker JNL';
 }
+
+.mainBlock {
+  max-width: 1440px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 36px;
+  padding-left: 36px;
+}
+
+.contentTitle {
+  max-width: 930px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 155px;
+  padding-bottom: 70px;
+  color: var(--bordeaux);
+  font-size: 40px;
+  font-family: 'Begum Sans';
+  line-height: 47px;
+  text-align: center;
+}
+
+.cardsContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}

@@ -16,6 +16,7 @@
     "@types/react-dom": "^17.0.5",
     "@typescript-eslint/eslint-plugin": "^4.24.0",
     "@typescript-eslint/parser": "^4.24.0",
+    "classnames": "^2.3.1",
     "next": "10.2.2",
     "next-compose-plugins": "^2.2.1",
     "normalize.css": "^8.0.1",

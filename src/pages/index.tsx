@@ -1,5 +1,5 @@
 import type { NextPage } from 'next'
-import { Logo, CardSmall, Socials } from '~/components/atoms'
+import { Logo, CardSmall, Socials, CardLarge } from '~/components/atoms'
 import { Footer } from '~/components/malecules'
 import css from './index.module.scss'
 
@@ -31,16 +31,17 @@ const Home: NextPage = () => (
         </div>
       </div>
     </div>
-
-    <div>
-      House of Strauss offers a unique musical and culinary experience in Vienna, the Capital of
-      Music
-    </div>
-
-    <div>
-      <CardSmall />
-      <CardSmall />
-      <CardSmall />
+    <div className={css.mainBlock}>
+      <div className={css.contentTitle}>
+        House of Strauss offers a unique musical and culinary experience in Vienna, the Capital of
+        Music
+      </div>
+      <CardLarge />
+      <div className={css.cardsContainer}>
+        <CardSmall />
+        <CardSmall type="music" />
+        <CardSmall type="statue" />
+      </div>
     </div>
 
     <Footer />

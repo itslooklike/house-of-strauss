@@ -2,4 +2,12 @@
   min-width: 300px;
   height: 485px;
   background-color: var(--orange);
+
+  &.music {
+    background-color: var(--light-purple);
+  }
+
+  &.statue {
+    background-color: var(--mint);
+  }
 }
