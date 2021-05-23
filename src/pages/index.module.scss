@@ -1,3 +1,5 @@
+@import '~/utils/mixins.scss';
+
 .hero {
   position: relative;
   height: 880px;
@@ -84,6 +86,11 @@
   margin-right: auto;
   margin-left: auto;
   padding: 0 36px 40px;
+
+  @include mediaMaxMd {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
 }
 
 .contentTitle {
@@ -102,9 +109,17 @@
 .cardsContainer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+
+  @include mediaMaxMd {
+    grid-template-columns: 1fr;
+  }
 }
 
 .mapContainer {
   display: grid;
   grid-template-columns: 2fr 1fr;
+
+  @include mediaMaxMd {
+    grid-template-columns: 1fr;
+  }
 }
