@@ -36,7 +36,8 @@
     "prettier": "^2.3.0",
     "stylelint": "^13.13.1",
     "stylelint-config-rational-order": "^0.1.2",
-    "stylelint-config-recommended": "^5.0.0"
+    "stylelint-config-recommended": "^5.0.0",
+    "stylelint-scss": "^3.19.0"
   },
   "prettier": {
     "printWidth": 100,
