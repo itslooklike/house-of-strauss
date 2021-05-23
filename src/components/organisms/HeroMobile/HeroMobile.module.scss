@@ -1,0 +1,42 @@
+.root {
+  display: flex;
+  height: 500px;
+  padding-bottom: 25px;
+  background-position: center;
+  background-size: cover;
+
+  &.var1 {
+    background-image: url('/images/image-museum-1-mobile.jpg');
+  }
+
+  &.var2 {
+    background-image: url('/images/image-museum-2-mobile.jpg');
+  }
+
+  &.var3 {
+    background-image: url('/images/image-museum-3-mobile.jpg');
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: auto;
+  color: var(--light-text);
+  text-align: center;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 34px;
+}
+
+.text {
+  margin-top: 5px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  line-height: 22px;
+}

@@ -1,5 +1,19 @@
 @import '~/utils/mixins.scss';
 
+.heroWrapDesktop {
+  @include mediaMaxMd {
+    display: none;
+  }
+}
+
+.heroWrapMobile {
+  display: none;
+
+  @include mediaMaxMd {
+    display: block;
+  }
+}
+
 .mainBlock {
   max-width: 1440px;
   margin-right: auto;
