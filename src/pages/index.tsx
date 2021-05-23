@@ -38,9 +38,9 @@ const Home: NextPage = () => (
       </div>
       <CardLarge />
       <div className={css.cardsContainer}>
-        <CardSmall />
-        <CardSmall type="music" />
-        <CardSmall type="statue" />
+        <CardSmall title="Delicacies and Souvenirs" link="Shop" />
+        <CardSmall type="music" title="Musical Masterclasses" link="More" />
+        <CardSmall type="statue" title="Strauss Research" link="More" />
       </div>
       <div className={css.mapContainer}>
         <CardMedium />
