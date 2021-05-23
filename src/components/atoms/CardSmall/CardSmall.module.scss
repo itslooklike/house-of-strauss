@@ -1,13 +1,72 @@
 .root {
+  position: relative;
+  display: flex;
   min-width: 300px;
   height: 485px;
+  padding-bottom: 50px;
+  padding-left: 70px;
   background-color: var(--orange);
+
+  &::after {
+    position: absolute;
+    top: 67px;
+    left: 46px;
+    width: 150px;
+    height: 177px;
+    background: url('/images/image-baerlauch.png') 0 0 / cover no-repeat;
+    content: '';
+  }
 
   &.music {
     background-color: var(--light-purple);
+
+    &::after {
+      top: 0;
+      left: 15px;
+      width: 239px;
+      height: 290px;
+      background: url('/images/image-violine.png') 0 0 / cover no-repeat;
+    }
   }
 
   &.statue {
     background-color: var(--mint);
+
+    &::after {
+      top: -40px;
+      right: 15px;
+      left: auto;
+      width: 296px;
+      height: 362px;
+      background: url('/images/image-strauss-bust.png') 0 0 / cover no-repeat;
+    }
+  }
+}
+
+.content {
+  max-width: 250px;
+  margin-top: auto;
+}
+
+.title {
+  margin-bottom: 15px;
+  color: var(--light-text);
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 38px;
+
+  .root.statue & {
+    color: var(--bordeaux);
+  }
+}
+
+.link {
+  color: var(--light-text);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+
+  .root.statue & {
+    color: var(--bordeaux);
   }
 }

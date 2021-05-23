@@ -7,7 +7,9 @@ type TProps = {
 
 export const CardSmall = ({ type }: TProps) => (
   <div className={cx(css.root, type && css[type])}>
-    <div>Delicacies and Souvenirs</div>
-    <div>Shop</div>
+    <div className={css.content}>
+      <div className={css.title}>Delicacies and Souvenirs</div>
+      <div className={css.link}>Shop</div>
+    </div>
   </div>
 )
