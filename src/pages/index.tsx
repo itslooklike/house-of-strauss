@@ -1,6 +1,6 @@
 import type { NextPage } from 'next'
 import { Logo, CardSmall, Socials, CardLarge, CardMedium } from '~/components/atoms'
-import { Footer, InnerMap } from '~/components/malecules'
+import { Footer, InnerMap, HeroTextSlot } from '~/components/molecules'
 import css from './index.module.scss'
 
 const Home: NextPage = () => (
@@ -25,9 +25,9 @@ const Home: NextPage = () => (
         </div>
 
         <div className={css.contentWrap}>
-          <div className={css.textMuseum}>Museum</div>
-          <div className={css.textConcerts}>Concerts</div>
-          <div className={css.textRestaurant}>Restaurant</div>
+          <HeroTextSlot title="Museum" text="Eintauchen in die Strauss Dynastie" link="More" />
+          <HeroTextSlot title="Concerts" text="A musical evening in Vienna" link="Coming soon" />
+          <HeroTextSlot title="Restaurant" text="A musical evening in Vienna" link="Reservation" />
         </div>
       </div>
     </div>

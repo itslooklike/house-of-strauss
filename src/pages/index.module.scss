@@ -29,7 +29,7 @@
   height: 100%;
   margin-right: auto;
   margin-left: auto;
-  padding: 50px 20px 90px;
+  padding: 50px 20px 0;
 }
 
 .socialWrap {
@@ -64,21 +64,6 @@
   justify-content: space-between;
   margin-top: auto;
   color: var(--light-text);
-}
-
-.textMuseum {
-  font-size: 36px;
-  font-family: 'Begum Sans';
-}
-
-.textConcerts {
-  font-size: 68px;
-  font-family: 'Northwell';
-}
-
-.textRestaurant {
-  font-size: 28px;
-  font-family: 'Sign Maker JNL';
 }
 
 .mainBlock {

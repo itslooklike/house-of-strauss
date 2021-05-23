@@ -1,4 +1,5 @@
 export { Button } from './Button'
+export { ButtonGhost } from './ButtonGhost'
 export { CardLarge } from './CardLarge'
 export { CardMedium } from './CardMedium'
 export { CardSmall } from './CardSmall'
