@@ -1,18 +1,27 @@
 @import '~/utils/mixins.scss';
 
-.header {
+.root {
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
   z-index: 1;
+  color: var(--light-text);
+
+  &.active {
+    color: var(--bordeaux);
+    background-color: var(--superlight-creme);
+    border-bottom: 2px solid var(--bordeaux);
+  }
+}
+
+.inner {
   display: flex;
   align-items: center;
   max-width: 1360px;
   margin-right: auto;
   margin-left: auto;
-  padding: 40px 20px 20px;
-  color: var(--light-text);
+  padding: 20px;
 
   @include mediaMaxMd {
     padding: 25px 20px;
@@ -31,6 +40,12 @@
 .socialWrap {
   margin-right: auto;
 
+  .root.active & {
+    svg path {
+      fill: var(--bordeaux);
+    }
+  }
+
   @include mediaMaxMd {
     display: none;
   }
@@ -42,6 +57,12 @@
   background-color: transparent;
   border: 0;
 
+  .root.active & {
+    svg path {
+      stroke: var(--bordeaux);
+    }
+  }
+
   @include mediaMaxMd {
     display: block;
   }
@@ -50,6 +71,12 @@
 .logoWrap {
   margin-right: auto;
   margin-left: auto;
+
+  .root.active & {
+    svg path {
+      fill: var(--bordeaux);
+    }
+  }
 
   @include mediaMinMd {
     position: absolute;
@@ -61,6 +88,7 @@
 .navList {
   display: flex;
   gap: 30px;
+  align-items: center;
   margin-left: auto;
   list-style: none;
 
@@ -70,6 +98,13 @@
 }
 
 .navListItem {
+  color: inherit;
+  text-decoration: none;
+
+  &.active {
+    padding: 7px 14px;
+    border: 1px solid currentColor;
+  }
 }
 
 .langBlock {
