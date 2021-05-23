@@ -1,6 +1,6 @@
 import type { NextPage } from 'next'
 import { Logo, CardSmall, Socials, CardLarge, CardMedium } from '~/components/atoms'
-import { Footer } from '~/components/malecules'
+import { Footer, InnerMap } from '~/components/malecules'
 import css from './index.module.scss'
 
 const Home: NextPage = () => (
@@ -44,6 +44,7 @@ const Home: NextPage = () => (
       </div>
       <div className={css.mapContainer}>
         <CardMedium />
+        <InnerMap />
       </div>
     </div>
 
