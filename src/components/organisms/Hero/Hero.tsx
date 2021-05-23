@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import cx from 'classnames'
-import { Socials, Logo } from '~/components/atoms'
-import { HeroTextSlot } from '~/components/molecules'
+import { HeroTextSlot, Header } from '~/components/molecules'
 import css from './Hero.module.scss'
 
 export const Hero = () => {
@@ -14,22 +13,7 @@ export const Hero = () => {
   return (
     <div className={cx(css.hero, css[type])}>
       <div className={css.inner}>
-        <div className={css.header}>
-          <div className={css.socialWrap}>
-            <Socials />
-          </div>
-          <div className={css.logoWrap}>
-            <Logo />
-          </div>
-          <nav>
-            <ul className={css.navList}>
-              <li className={css.navListItem}>Visit</li>
-              <li className={css.navListItem}>More</li>
-              <li className={css.navListItem}>News</li>
-              <li className={css.navListItem}>Tickets</li>
-            </ul>
-          </nav>
-        </div>
+        <Header />
 
         <div className={css.contentWrap}>
           <HeroTextSlot

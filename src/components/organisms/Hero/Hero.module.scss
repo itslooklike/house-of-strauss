@@ -1,10 +1,8 @@
 .hero {
   position: relative;
   height: 880px;
-  background-color: var(--blue);
-  background-image: url('/images/museum-1.jpg');
   background-repeat: no-repeat;
-  background-position: top right;
+  background-position: center;
   background-size: cover;
   transition: all 0.3s;
 
@@ -16,6 +14,10 @@
     height: 17px;
     background: url('/images/row-hills.svg') 0 0 / cover repeat-x;
     content: '';
+  }
+
+  &.var1 {
+    background-image: url('/images/museum-1.jpg');
   }
 
   &.var2 {
@@ -37,32 +39,6 @@
   margin-right: auto;
   margin-left: auto;
   padding: 50px 20px 0;
-}
-
-.socialWrap {
-  margin-right: auto;
-}
-
-.logoWrap {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.header {
-  display: flex;
-  align-items: center;
-}
-
-.navList {
-  display: flex;
-  gap: 30px;
-  margin-left: auto;
-  list-style: none;
-}
-
-.navListItem {
-  color: var(--light-text);
 }
 
 .contentWrap {
