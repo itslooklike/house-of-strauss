@@ -3,6 +3,7 @@ import cx from 'classnames'
 import { Socials, Logo } from '~/components/atoms'
 import { MenuMobile } from '~/components/molecules'
 import { IconMenu } from '~/icons'
+import { menu } from '~/utils/config'
 import css from './Header.module.scss'
 
 export const Header = () => {
@@ -51,33 +52,43 @@ export const Header = () => {
             <Socials />
           </div>
           <button type="button" className={css.menuIconWrap} onClick={handleOpen}>
-            <IconMenu width={20} />
+            <IconMenu width={24} />
           </button>
           <div className={css.logoWrap}>
             <Logo />
           </div>
           <nav>
             <ul className={css.navList}>
-              <li>
-                <a href="#" className={css.navListItem}>
-                  Visit
-                </a>
+              <li className={css.navListItem}>
+                <span>Visit</span>
+                <div className={css.innerMenuContainer}>
+                  <ul className={css.innerMenuList}>
+                    {menu[0].map((item, index) => (
+                      <li key={index}>
+                        <a href={item.url} className={css.innerMenuListItem}>
+                          {item.title}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </li>
-              <li>
-                <a href="#" className={css.navListItem}>
-                  More
-                </a>
+              <li className={css.navListItem}>
+                <span>More</span>
+                <div className={css.innerMenuContainer}>
+                  <ul className={css.innerMenuList}>
+                    {menu[1].map((item, index) => (
+                      <li key={index}>
+                        <a href={item.url} className={css.innerMenuListItem}>
+                          {item.title}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </li>
-              <li>
-                <a href="#" className={css.navListItem}>
-                  News
-                </a>
-              </li>
-              <li>
-                <a href="#" className={cx(css.navListItem, css.active)}>
-                  Tickets
-                </a>
-              </li>
+              <li className={css.navListItem}>News</li>
+              <li className={cx(css.navListItem, css.active)}>Tickets</li>
             </ul>
           </nav>
           <div className={css.langBlock}>En *</div>

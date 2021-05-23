@@ -1,4 +1,4 @@
-$safe-space: 150px;
+$safe-space: 80px;
 
 .root {
   position: relative;
@@ -16,12 +16,12 @@ $safe-space: 150px;
 
 .content {
   position: absolute;
-  top: calc(100% - $safe-space);
   right: 0;
   left: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 20px;
   opacity: 0;
   transition: all 0.3s;
 

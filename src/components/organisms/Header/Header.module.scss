@@ -21,7 +21,13 @@
   max-width: 1360px;
   margin-right: auto;
   margin-left: auto;
-  padding: 20px;
+  padding: 40px 20px;
+  transition: all 0.3s;
+
+  .root.active & {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 
   @include mediaMaxMd {
     padding: 25px 20px;
@@ -87,9 +93,8 @@
 
 .navList {
   display: flex;
-  gap: 30px;
   align-items: center;
-  margin-left: auto;
+  margin: 0 0 0 auto;
   list-style: none;
 
   @include mediaMaxMd {
@@ -98,11 +103,10 @@
 }
 
 .navListItem {
-  color: inherit;
-  text-decoration: none;
+  position: relative;
+  padding: 7px 14px;
 
   &.active {
-    padding: 7px 14px;
     border: 1px solid currentColor;
   }
 }
@@ -113,4 +117,50 @@
   @include mediaMaxMd {
     margin-left: 0px;
   }
+}
+
+.innerMenuContainer {
+  position: absolute;
+  top: calc(100% - 5px);
+  left: 50%;
+  display: none;
+  padding-top: 10px;
+
+  .navListItem:hover & {
+    display: block;
+  }
+}
+
+.innerMenuList {
+  position: relative;
+  display: grid;
+  gap: 20px;
+  padding: 15px 35px;
+  color: var(--bordeaux);
+  list-style: none;
+  background-color: var(--superlight-creme);
+  border: 1px solid var(--bordeaux);
+  transform: translateX(-50%);
+
+  &::before {
+    position: absolute;
+    top: -6px;
+    right: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: var(--superlight-creme);
+    border: 1px solid var(--bordeaux);
+    border-top-width: 0;
+    border-right-width: 0;
+    transform: rotate(-225deg);
+    content: '';
+  }
+}
+
+.innerMenuListItem {
+  color: var(--bordeaux);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  text-decoration: none;
 }
