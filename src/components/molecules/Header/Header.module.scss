@@ -1,6 +1,15 @@
 .header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
   display: flex;
   align-items: center;
+  max-width: 1360px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 40px 20px 20px;
 }
 
 .socialWrap {

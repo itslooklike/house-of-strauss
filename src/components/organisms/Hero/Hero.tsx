@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import cx from 'classnames'
-import { HeroTextSlot, Header } from '~/components/molecules'
+import { HeroTextSlot } from '~/components/molecules'
 import css from './Hero.module.scss'
 
 export const Hero = () => {
@@ -13,8 +13,6 @@ export const Hero = () => {
   return (
     <div className={cx(css.hero, css[type])}>
       <div className={css.inner}>
-        <Header />
-
         <div className={css.contentWrap}>
           <HeroTextSlot
             onMouseEnter={handleHover1}

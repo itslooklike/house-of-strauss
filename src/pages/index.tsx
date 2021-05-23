@@ -1,11 +1,12 @@
 import type { NextPage } from 'next'
 import { CardSmall, CardLarge, CardMedium } from '~/components/atoms'
-import { Footer, InnerMap } from '~/components/molecules'
+import { Footer, InnerMap, Header } from '~/components/molecules'
 import { Hero, HeroMobile } from '~/components/organisms'
 import css from './index.module.scss'
 
 const Home: NextPage = () => (
   <div>
+    <Header />
     <div className={css.heroWrapDesktop}>
       <Hero />
     </div>
