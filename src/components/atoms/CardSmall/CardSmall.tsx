@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import cx from 'classnames'
 import AnimateHeight from 'react-animate-height'
+import { IconArrow } from '~/icons'
 import css from './CardSmall.module.scss'
 
 type TProps = {
@@ -26,7 +27,12 @@ export const CardSmall = ({ type, title, link, description }: TProps) => {
         <AnimateHeight height={height}>
           <div className={css.description}>{description}</div>
         </AnimateHeight>
-        <div className={css.link}>{link}</div>
+        <div className={css.link}>
+          <span className={css.iconWrap}>
+            <IconArrow height={12} />
+          </span>
+          {link}
+        </div>
       </div>
     </div>
   )
