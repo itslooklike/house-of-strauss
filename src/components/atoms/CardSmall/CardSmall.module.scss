@@ -5,6 +5,7 @@
   height: 485px;
   padding-bottom: 50px;
   padding-left: 70px;
+  color: var(--light-text);
   background-color: var(--orange);
 
   &::after {
@@ -30,6 +31,7 @@
   }
 
   &.statue {
+    color: var(--bordeaux);
     background-color: var(--mint);
 
     &::after {
@@ -50,23 +52,18 @@
 
 .title {
   margin-bottom: 15px;
-  color: var(--light-text);
   font-weight: 600;
   font-size: 28px;
   line-height: 38px;
+}
 
-  .root.statue & {
-    color: var(--bordeaux);
-  }
+.description {
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .link {
-  color: var(--light-text);
   font-weight: bold;
   font-size: 16px;
   line-height: 22px;
-
-  .root.statue & {
-    color: var(--bordeaux);
-  }
 }

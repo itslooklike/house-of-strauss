@@ -37,9 +37,23 @@ const Home: NextPage = () => (
       </div>
       <CardLarge />
       <div className={css.cardsContainer}>
-        <CardSmall title="Delicacies and Souvenirs" link="Shop" />
-        <CardSmall type="music" title="Musical Masterclasses" link="More" />
-        <CardSmall type="statue" title="Strauss Research" link="More" />
+        <CardSmall
+          title="Delicacies and Souvenirs"
+          link="Shop"
+          description="Our shop offers specially made Viennese and „House of Strauss“ souvenirs along with culinary delicacies."
+        />
+        <CardSmall
+          type="music"
+          title="Musical Masterclasses"
+          link="More"
+          description="Our shop offers specially made Viennese and „House of Strauss“ souvenirs along with culinary delicacies."
+        />
+        <CardSmall
+          type="statue"
+          title="Strauss Research"
+          link="More"
+          description="Our shop offers specially made Viennese and „House of Strauss“ souvenirs along with culinary delicacies."
+        />
       </div>
       <div className={css.mapContainer}>
         <CardMedium />
