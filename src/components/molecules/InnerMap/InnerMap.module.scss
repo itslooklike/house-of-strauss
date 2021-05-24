@@ -1,6 +1,12 @@
+@import '~/utils/mixins.scss';
+
 .root {
   position: relative;
   height: 660px;
+
+  @include mediaMaxMd {
+    height: 440px;
+  }
 }
 
 .btnWrap {

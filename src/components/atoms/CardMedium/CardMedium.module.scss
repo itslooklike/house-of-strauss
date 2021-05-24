@@ -1,9 +1,17 @@
+@import '~/utils/mixins.scss';
+
 .root {
   display: flex;
   height: 660px;
   padding-bottom: 90px;
   padding-left: 70px;
   background: url('/images/image-kaffe.jpg') 0 0 / cover no-repeat;
+
+  @include mediaMaxMd {
+    height: 440px;
+    padding-bottom: 40px;
+    padding-left: 30px;
+  }
 }
 
 .content {
