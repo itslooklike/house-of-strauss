@@ -6,7 +6,11 @@ import { IconMenu } from '~/icons'
 import { menu } from '~/utils/config'
 import css from './Header.module.scss'
 
-export const Header = () => {
+type TProps = {
+  type?: 'dark'
+}
+
+export const Header = ({ type }: TProps) => {
   const [show, setShow] = useState(false)
   const [headerScrolled, setHeaderScrolled] = useState(false)
 
@@ -41,7 +45,7 @@ export const Header = () => {
   return (
     <>
       <div ref={node} />
-      <div className={cx(css.root, headerScrolled && css.active)}>
+      <div className={cx(css.root, type && css[type], headerScrolled && css.active)}>
         <div className={css.inner}>
           {show && (
             <div className={css.mobileMenu}>

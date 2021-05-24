@@ -57,7 +57,7 @@ export const MenuMobile = ({ onClick }: TProps) => (
     </div>
 
     <div className={css.socialsWrap}>
-      <Socials fill="bordeaux" size={24} />
+      <Socials size={24} />
     </div>
   </div>
 )

@@ -5,8 +5,12 @@
   > *:not(:last-child) {
     margin-right: 10px;
   }
+}
 
-  &.bordeaux svg path {
-    fill: var(--bordeaux);
+.link {
+  color: inherit;
+
+  svg path {
+    fill: currentColor;
   }
 }
