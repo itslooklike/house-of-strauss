@@ -46,13 +46,13 @@ const Home: NextPage = () => (
           type="music"
           title="Musical Masterclasses"
           link="More"
-          description="Our shop offers specially made Viennese and „House of Strauss“ souvenirs along with culinary delicacies."
+          description="Young musicians from all over the world work here with internationally recognised masters to improve their skills."
         />
         <CardSmall
           type="statue"
           title="Strauss Research"
           link="More"
-          description="Our shop offers specially made Viennese and „House of Strauss“ souvenirs along with culinary delicacies."
+          description="The Viennese Institut for Strauss-Research (WISF) is a sponsoring association for scientific research projects relating to the Strauss family and their contemporaries, located in Casino Zögernitz."
         />
       </div>
       <div className={css.mapContainer}>
