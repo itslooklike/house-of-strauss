@@ -1,5 +1,6 @@
 .hero {
   position: relative;
+  box-sizing: border-box;
   height: 880px;
   background-repeat: no-repeat;
   background-position: center;
@@ -43,7 +44,7 @@
 
 .contentWrap {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-between;
   margin-top: auto;
   color: var(--light-text);

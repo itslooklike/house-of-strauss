@@ -1,33 +1,17 @@
-$safe-space: 80px;
-
 .root {
   position: relative;
   box-sizing: content-box;
   width: 100%;
   max-width: 190px;
-  padding: 50px 50px $safe-space;
+  padding: 130px 70px;
   text-align: center;
-  transition: all 0.3s;
-
-  &:hover {
-    transform: translateY(-100px);
-  }
 }
 
 .content {
-  position: absolute;
-  right: 0;
-  left: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 20px;
-  opacity: 0;
-  transition: all 0.3s;
-
-  .root:hover & {
-    opacity: 1;
-  }
 }
 
 .title {
