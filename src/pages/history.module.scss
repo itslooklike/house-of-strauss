@@ -1,0 +1,32 @@
+.head {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 150px;
+}
+
+.title {
+  margin: 0 0 30px;
+  font-size: 120px;
+  font-family: Begum Sans;
+  line-height: 143px;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image {
+  width: 100%;
+  max-width: 500px;
+}
+
+.col2 {
+  padding-top: 100px;
+  padding-left: 40px;
+}
+
+.textBlock {
+  max-width: 550px;
+  padding-left: 100px;
+}

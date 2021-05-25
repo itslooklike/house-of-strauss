@@ -4,7 +4,7 @@ import { Header } from '~/components/organisms'
 import { LWithFooter } from '~/components/layouts'
 import css from './about.module.scss'
 
-const Privacy: NextPage = () => (
+const About: NextPage = () => (
   <LWithFooter>
     <Header type="dark" />
     <WrapContent>
@@ -28,4 +28,4 @@ const Privacy: NextPage = () => (
   </LWithFooter>
 )
 
-export default Privacy
+export default About

@@ -3,13 +3,14 @@ import { default as IconLogoCasino } from './assets/logo-casino.svg'
 
 type TProps = {
   name?: 'house' | 'casino'
+  width?: number
 }
 
-export const Logo = ({ name = 'house' }: TProps) => {
+export const Logo = ({ name = 'house', width }: TProps) => {
   switch (name) {
     case 'casino':
-      return <IconLogoCasino width={317} />
+      return <IconLogoCasino width={width || 317} />
     default:
-      return <IconLogo width={106} />
+      return <IconLogo width={width || 106} />
   }
 }
