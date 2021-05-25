@@ -3,6 +3,10 @@
 .hero {
   height: 700px;
   background: url('/images/image-museum-page.jpg') center / cover no-repeat;
+
+  @include mediaMaxMd {
+    display: none;
+  }
 }
 
 .main {
@@ -10,12 +14,37 @@
   margin: -120px auto 0;
   padding: 60px 36px 100px;
   background-color: var(--superlight-creme);
+
+  @include mediaMaxMd {
+    margin-top: 0;
+    padding-top: 100px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
 }
 
 .title {
   margin: 0 0 30px;
   font-size: 40px;
   line-height: 48px;
+
+  @include mediaMaxMd {
+    margin-bottom: 0;
+    padding-bottom: 340px;
+    color: var(--blue);
+    font-size: 26px;
+    line-height: 31px;
+    text-align: center;
+    background: url('/images/image-museum-page-mobile.png') bottom center / 345px 392px no-repeat;
+  }
+}
+
+.content {
+  @include mediaMaxMd {
+    padding: 150px 40px 30px;
+    color: var(--superlight-creme);
+    background-color: var(--blue);
+  }
 }
 
 .subtitle {

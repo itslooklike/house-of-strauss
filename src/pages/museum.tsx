@@ -11,11 +11,13 @@ const Museum: NextPage = () => (
       <h1 className={css.title}>
         The King of Waltz, Johann Strauss II, was arguably the world‘s first pop star
       </h1>
-      <p className={css.subtitle}>
-        Dive into the story of the Strauss dynasty while their legacy comes alive around you.
-      </p>
-      <p className={css.text}>The museum will open in June 2022. More info will follow soon.</p>
-      <FormDefault title="Subscribe to our newsletter to stay up to date" />
+      <div className={css.content}>
+        <p className={css.subtitle}>
+          Dive into the story of the Strauss dynasty while their legacy comes alive around you.
+        </p>
+        <p className={css.text}>The museum will open in June 2022. More info will follow soon.</p>
+        <FormDefault title="Subscribe to our newsletter to stay up to date" />
+      </div>
     </main>
     <Footer />
   </div>
