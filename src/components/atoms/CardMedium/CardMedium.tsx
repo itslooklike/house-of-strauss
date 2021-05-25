@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { IconArrow } from '~/icons'
 import { allRoutes } from '~/utils/config'
 import css from './CardMedium.module.scss'
 
@@ -12,7 +13,10 @@ export const CardMedium = () => (
       </p>
       <div className={css.link}>
         <Link href={allRoutes.history.url}>
-          <a>{allRoutes.history.title}</a>
+          <a>
+            <IconArrow height={12} />
+            &nbsp;{allRoutes.history.title}
+          </a>
         </Link>
       </div>
     </div>

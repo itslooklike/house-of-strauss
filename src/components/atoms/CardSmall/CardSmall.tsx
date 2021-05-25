@@ -39,24 +39,20 @@ export const CardSmall = (props: TProps) => {
     >
       <div className={css.content}>
         <div className={css.title}>{title}</div>
-        <AnimateHeight height={height}>
+        <AnimateHeight height={height} animateOpacity>
           <div className={css.description}>{description}</div>
         </AnimateHeight>
 
         {'onClick' in props ? (
           <div className={css.link} onClick={props.onClick}>
-            <span className={css.iconWrap}>
-              <IconArrow height={12} />
-            </span>
-            {linkText}
+            <IconArrow height={12} />
+            &nbsp;{linkText}
           </div>
         ) : (
           <Link href={props.linkHref}>
             <a className={css.link}>
-              <span className={css.iconWrap}>
-                <IconArrow height={12} />
-              </span>
-              {linkText}
+              <IconArrow height={12} />
+              &nbsp;{linkText}
             </a>
           </Link>
         )}

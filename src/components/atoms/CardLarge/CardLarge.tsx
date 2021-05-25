@@ -1,3 +1,6 @@
+import Link from 'next/link'
+import { IconArrow } from '~/icons'
+import { allRoutes } from '~/utils/config'
 import css from './CardLarge.module.scss'
 
 export const CardLarge = () => (
@@ -8,7 +11,12 @@ export const CardLarge = () => (
         The unique acoustics and the elegant setting of the hall combined with the flair of history
         form an impressive backdrop for a wide range of events.
       </p>
-      <div className={css.link}>Premises</div>
+      <Link href={allRoutes.events.url}>
+        <a className={css.link}>
+          <IconArrow height={12} />
+          &nbsp;Premises
+        </a>
+      </Link>
     </div>
   </div>
 )
