@@ -5,7 +5,7 @@
   top: 0;
   right: 0;
   left: 0;
-  z-index: 1;
+  z-index: 100;
   color: var(--light-text);
 
   &.dark {
@@ -16,6 +16,12 @@
     color: var(--bordeaux);
     background-color: var(--superlight-creme);
     border-bottom: 2px solid var(--bordeaux);
+  }
+
+  &.mobileDark {
+    @include mediaMaxMd {
+      color: var(--bordeaux);
+    }
   }
 }
 

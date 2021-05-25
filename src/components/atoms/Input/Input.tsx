@@ -3,11 +3,15 @@
 import cx from 'classnames'
 import css from './Input.module.scss'
 
-export const Input = (props: React.InputHTMLAttributes<HTMLInputElement>) => {
-  const { className, ...rest } = props
+type TProps = {
+  mobileLight?: boolean
+}
+
+export const Input = (props: React.InputHTMLAttributes<HTMLInputElement> & TProps) => {
+  const { className, mobileLight, ...rest } = props
 
   return (
-    <div className={css.inputWrap}>
+    <div className={cx(css.inputWrap, mobileLight && css.mobileLight)}>
       <input className={cx(css.input, className)} {...rest} />
     </div>
   )

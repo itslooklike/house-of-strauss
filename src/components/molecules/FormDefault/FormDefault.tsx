@@ -4,22 +4,23 @@ import css from './FormDefault.module.scss'
 
 type TProps = {
   title?: string
+  mobileLight?: boolean
 }
 
-export const FormDefault = ({ title }: TProps) => (
+export const FormDefault = ({ title, mobileLight }: TProps) => (
   <form>
     {title && <p className={css.title}>{title}</p>}
 
     <div className={css.firstInput}>
-      <Input placeholder="Full name" type="text" />
+      <Input placeholder="Full name" type="text" mobileLight={mobileLight} />
     </div>
 
     <div className={css.secondInput}>
-      <Input placeholder="Email" type="email" />
+      <Input placeholder="Email" type="email" mobileLight={mobileLight} />
     </div>
 
     <div className={css.controlWrap}>
-      <ButtonForm type="submit">
+      <ButtonForm type="submit" mobileLight={mobileLight}>
         <IconCheck width={20} />
         &nbsp;Submit
       </ButtonForm>

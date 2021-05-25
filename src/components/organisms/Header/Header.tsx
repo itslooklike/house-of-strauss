@@ -9,9 +9,10 @@ import css from './Header.module.scss'
 
 type TProps = {
   type?: 'dark'
+  mobileDark?: boolean
 }
 
-export const Header = ({ type }: TProps) => {
+export const Header = ({ type, mobileDark }: TProps) => {
   const [show, setShow] = useState(false)
   const [headerScrolled, setHeaderScrolled] = useState(false)
 
@@ -46,7 +47,14 @@ export const Header = ({ type }: TProps) => {
   return (
     <>
       <div ref={node} />
-      <div className={cx(css.root, type && css[type], headerScrolled && css.active)}>
+      <div
+        className={cx(
+          css.root,
+          type && css[type],
+          mobileDark && css.mobileDark,
+          headerScrolled && css.active
+        )}
+      >
         <div className={css.inner}>
           {show && (
             <div className={css.mobileMenu}>

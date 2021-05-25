@@ -2,11 +2,19 @@
 import cx from 'classnames'
 import css from './ButtonForm.module.scss'
 
-export const ButtonForm: React.FC<React.ComponentProps<'button'>> = (props) => {
-  const { children, className, ...rest } = props
+type TProps = {
+  mobileLight?: boolean
+}
+
+export const ButtonForm: React.FC<React.ComponentProps<'button'> & TProps> = (props) => {
+  const { children, className, mobileLight, ...rest } = props
 
   return (
-    <button type="button" className={cx(css.buttonForm, className)} {...rest}>
+    <button
+      type="button"
+      className={cx(css.buttonForm, mobileLight && css.mobileLight, className)}
+      {...rest}
+    >
       {children}
     </button>
   )

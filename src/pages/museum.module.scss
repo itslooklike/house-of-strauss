@@ -41,9 +41,28 @@
 
 .content {
   @include mediaMaxMd {
-    padding: 150px 40px 30px;
+    position: relative;
     color: var(--superlight-creme);
     background-color: var(--blue);
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 0;
+      width: 100%;
+      height: 330px;
+      background: url('/images/image-museum-page-mobile-text-bg.jpg') top / cover no-repeat;
+      content: '';
+    }
+  }
+}
+
+.contentInner {
+  @include mediaMaxMd {
+    position: relative;
+    z-index: 1;
+    padding: 150px 40px 30px;
   }
 }
 

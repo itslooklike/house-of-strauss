@@ -1,16 +1,33 @@
+@import '~/utils/mixins.scss';
+
 .inputWrap {
   height: 48px;
+  color: var(--bordeaux);
   border: 2px solid var(--bordeaux);
+
+  &.mobileLight {
+    @include mediaMaxMd {
+      color: var(--superlight-creme);
+      border-color: var(--superlight-creme);
+    }
+  }
 }
 
 .input {
   width: 100%;
   height: 100%;
   padding: 0 20px;
+  color: inherit;
   background-color: transparent;
   border: 0;
 
   &::placeholder {
     color: var(--bordeaux);
+
+    .inputWrap.mobileLight & {
+      @include mediaMaxMd {
+        color: var(--superlight-creme);
+      }
+    }
   }
 }

@@ -1,3 +1,5 @@
+@import '~/utils/mixins.scss';
+
 .buttonForm {
   display: flex;
   align-items: center;
@@ -6,4 +8,11 @@
   background-color: var(--bordeaux);
   border: 0;
   border-radius: 0;
+
+  &.mobileLight {
+    @include mediaMaxMd {
+      color: var(--blue);
+      background-color: var(--superlight-creme);
+    }
+  }
 }
