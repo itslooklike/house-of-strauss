@@ -1,0 +1,27 @@
+.formTitle {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.firstInput {
+  max-width: 300px;
+}
+
+.secondInput {
+  max-width: 340px;
+  margin-top: -2px;
+}
+
+.policy {
+  max-width: 177px;
+  margin-left: 15px;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.controlWrap {
+  display: flex;
+  align-items: center;
+}

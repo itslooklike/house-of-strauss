@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from 'react'
+import Link from 'next/link'
 import cx from 'classnames'
 import { Socials, Logo } from '~/components/atoms'
 import { MenuMobile } from '~/components/molecules'
@@ -59,7 +60,11 @@ export const Header = ({ type }: TProps) => {
             <IconMenu width={24} />
           </button>
           <div className={css.logoWrap}>
-            <Logo />
+            <Link href="/">
+              <a>
+                <Logo />
+              </a>
+            </Link>
           </div>
           <nav>
             <ul className={css.navList}>
@@ -92,7 +97,11 @@ export const Header = ({ type }: TProps) => {
                 </div>
               </li>
               <li className={css.navListItem}>News</li>
-              <li className={cx(css.navListItem, css.active)}>Tickets</li>
+              <li className={cx(css.navListItem, css.active)}>
+                <Link href="/tickets">
+                  <a>Tickets</a>
+                </Link>
+              </li>
             </ul>
           </nav>
           <div className={css.langBlock}>En *</div>
