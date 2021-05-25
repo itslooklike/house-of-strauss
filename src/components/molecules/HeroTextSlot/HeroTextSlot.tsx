@@ -1,3 +1,5 @@
+/* eslint-disable react/destructuring-assignment */
+
 import { useState } from 'react'
 import AnimateHeight from 'react-animate-height'
 import Link from 'next/link'
@@ -39,7 +41,7 @@ export const HeroTextSlot = (props: TProps) => {
         onMouseLeave={handleScrollHide}
       >
         <div className={css.title}>{title}</div>
-        <AnimateHeight height={height} animateOpacity className="lol">
+        <AnimateHeight height={height} animateOpacity>
           <div className={css.content}>
             <div className={css.subtitle}>{text}</div>
             <div>
