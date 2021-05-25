@@ -19,18 +19,21 @@ export const Hero = () => {
             title="Museum"
             text="Eintauchen in die Strauss Dynastie"
             link="More"
+            linkUrl="/museum"
           />
           <HeroTextSlot
             onMouseEnter={handleHover2}
             title="Concerts"
             text="A musical evening in Vienna"
             link="Coming soon"
+            linkUrl="/concerts"
           />
           <HeroTextSlot
             onMouseEnter={handleHover3}
             title="Restaurant"
             text="A musical evening in Vienna"
             link="Reservation"
+            linkUrl="/restaurant"
           />
         </div>
       </div>

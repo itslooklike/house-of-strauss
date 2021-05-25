@@ -2,9 +2,13 @@ import { Input, ButtonForm } from '~/components/atoms'
 import { IconCheck } from '~/icons'
 import css from './FormDefault.module.scss'
 
-export const FormDefault = () => (
+type TProps = {
+  title?: string
+}
+
+export const FormDefault = ({ title }: TProps) => (
   <form>
-    <p className={css.formTitle}>Newsletter</p>
+    {title && <p className={css.title}>{title}</p>}
 
     <div className={css.firstInput}>
       <Input placeholder="Full name" type="text" />
@@ -20,7 +24,10 @@ export const FormDefault = () => (
         &nbsp;Submit
       </ButtonForm>
       <span className={css.policy}>
-        By submitting you accept our <a href="#">privacy policy</a>
+        By submitting you accept our{' '}
+        <a className={css.policyLink} href="#">
+          privacy policy
+        </a>
       </span>
     </div>
   </form>

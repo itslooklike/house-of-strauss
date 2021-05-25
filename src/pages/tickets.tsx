@@ -9,9 +9,8 @@ const Tickets: NextPage = () => (
     <main className={css.main}>
       <h1 className={css.title}>Tickets</h1>
       <p className={css.subtitle}>Coming soon...</p>
-      <FormDefault />
+      <FormDefault title="Newsletter" />
     </main>
-
     <Footer />
   </div>
 )

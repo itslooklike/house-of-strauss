@@ -1,4 +1,4 @@
-.formTitle {
+.title {
   font-weight: bold;
   font-size: 16px;
   line-height: 22px;
@@ -13,6 +13,11 @@
   margin-top: -2px;
 }
 
+.controlWrap {
+  display: flex;
+  align-items: center;
+}
+
 .policy {
   max-width: 177px;
   margin-left: 15px;
@@ -21,7 +26,6 @@
   line-height: 16px;
 }
 
-.controlWrap {
-  display: flex;
-  align-items: center;
+.policyLink {
+  text-decoration: underline;
 }
