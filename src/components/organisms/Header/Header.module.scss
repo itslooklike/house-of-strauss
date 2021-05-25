@@ -51,7 +51,7 @@
   margin-right: auto;
   color: currentColor;
 
-  svg path {
+  & svg path {
     fill: currentColor;
   }
 
@@ -63,10 +63,11 @@
 .menuIconWrap {
   display: none;
   padding: 0;
+  color: inherit;
   background-color: transparent;
   border: 0;
 
-  svg path {
+  & svg path {
     stroke: currentColor;
   }
 
