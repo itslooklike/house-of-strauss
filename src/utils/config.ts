@@ -1,3 +1,5 @@
+export const portalId = 'modal'
+
 export const menu = [
   [
     { title: 'Tickets', url: '#' },
