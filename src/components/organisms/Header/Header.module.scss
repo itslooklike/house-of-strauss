@@ -69,10 +69,6 @@
   background-color: transparent;
   border: 0;
 
-  & svg path {
-    stroke: currentColor;
-  }
-
   @include mediaMaxMd {
     display: block;
   }
@@ -93,6 +89,7 @@
   display: flex;
   align-items: center;
   margin: 0 0 0 auto;
+  padding: 0;
   list-style: none;
 
   @include mediaMaxMd {
@@ -106,6 +103,11 @@
 
   &.active {
     border: 1px solid currentColor;
+
+    &:hover {
+      color: var(--light-text);
+      background-color: var(--bordeaux);
+    }
   }
 }
 
@@ -132,8 +134,7 @@
 .innerMenuList {
   position: relative;
   display: grid;
-  gap: 20px;
-  padding: 15px 35px;
+  padding: 5px 0;
   color: var(--bordeaux);
   list-style: none;
   background-color: var(--superlight-creme);
@@ -156,9 +157,17 @@
 }
 
 .innerMenuListItem {
+  display: block;
+  padding: 10px 35px;
   color: var(--bordeaux);
   font-weight: 600;
   font-size: 16px;
   line-height: 22px;
   text-decoration: none;
+  transition: all 0.3s;
+
+  &:hover {
+    color: var(--light-text);
+    background-color: var(--bordeaux);
+  }
 }
