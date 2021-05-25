@@ -1,27 +1,40 @@
 export const portalId = 'modal'
 
+export const allRoutes = {
+  tickets: { title: 'Tickets', url: '/tickets' },
+  museum: { title: 'Museum', url: '/museum' },
+  concerts: { title: 'Concerts', url: '/concerts' },
+  brasserie: { title: 'Brasserie', url: '/#' },
+  shop: { title: 'Shop', url: '/shop' },
+  directions: { title: 'Directions', url: '/#' },
+  events: { title: 'Events', url: '/#' },
+  research: { title: 'Research', url: '/#' },
+  masterclasses: { title: 'Masterclasses', url: '/#' },
+  history: { title: 'History', url: '/history' },
+  about: { title: 'About', url: '/about' },
+  contact: { title: 'Contact', url: '/contacts' },
+  imprint: { title: 'Imprint', url: '/imprint' },
+  privacy: { title: 'Privacy Policy', url: '/privacy' },
+  news: { title: 'News', url: '/news' },
+}
+
 export const menu = [
   [
-    { title: 'Tickets', url: '/tickets' },
-    { title: 'Museum', url: '/museum' },
-    { title: 'Concerts', url: '/concerts' },
-    { title: 'Brasserie', url: '/#' },
-    { title: 'Shop', url: '/shop' },
-    { title: 'Directions', url: '/#' },
+    allRoutes.tickets,
+    allRoutes.museum,
+    allRoutes.concerts,
+    allRoutes.brasserie,
+    allRoutes.shop,
+    allRoutes.directions,
   ],
   [
-    { title: 'Events', url: '/#' },
-    { title: 'Research', url: '/#' },
-    { title: 'Masterclasses', url: '/#' },
-    { title: 'History', url: '/history' },
-    { title: 'About', url: '/about' },
-    { title: 'Contact', url: '/contacts' },
+    allRoutes.events,
+    allRoutes.research,
+    allRoutes.masterclasses,
+    allRoutes.history,
+    allRoutes.about,
+    allRoutes.contact,
   ],
-]
-
-export const subMenu = [
-  { title: 'Imprint', url: '/imprint' },
-  { title: 'Privacy Policy', url: '/privacy' },
 ]
 
 export const socials = {

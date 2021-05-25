@@ -2,7 +2,7 @@ import cx from 'classnames'
 import Link from 'next/link'
 import { Socials, Logo } from '~/components/atoms'
 import { IconCross } from '~/icons'
-import { menu } from '~/utils/config'
+import { menu, allRoutes } from '~/utils/config'
 import css from './MenuMobile.module.scss'
 
 type TProps = {
@@ -22,13 +22,13 @@ export const MenuMobile = ({ onClick }: TProps) => (
     <div className={css.content}>
       <div className={css.tabs}>
         <div>
-          <Link href="/tickets">
-            <a className={cx(css.tab, css.active)}>Tickets</a>
+          <Link href={allRoutes.tickets.url}>
+            <a className={cx(css.tab, css.active)}>{allRoutes.tickets.title}</a>
           </Link>
         </div>
         <div>
-          <Link href="/news">
-            <a className={css.tab}>News</a>
+          <Link href={allRoutes.news.url}>
+            <a className={css.tab}>{allRoutes.news.title}</a>
           </Link>
         </div>
       </div>

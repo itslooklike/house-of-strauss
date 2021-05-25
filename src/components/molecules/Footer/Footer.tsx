@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { Socials } from '~/components/atoms'
-import { menu, subMenu } from '~/utils/config'
+import { menu, allRoutes } from '~/utils/config'
 import css from './Footer.module.scss'
 
 export const Footer = () => (
@@ -37,13 +37,16 @@ export const Footer = () => (
       <div className={css.bottomSlot}>
         <p className={css.textLight}>© House of Strauss</p>
       </div>
-      {subMenu.map((item, index) => (
-        <div key={index} className={css.bottomSlot}>
-          <Link href={item.url}>
-            <a className={css.textMainLink}>{item.title}</a>
-          </Link>
-        </div>
-      ))}
+      <div className={css.bottomSlot}>
+        <Link href={allRoutes.imprint.url}>
+          <a className={css.textMainLink}>{allRoutes.imprint.title}</a>
+        </Link>
+      </div>
+      <div className={css.bottomSlot}>
+        <Link href={allRoutes.privacy.url}>
+          <a className={css.textMainLink}>{allRoutes.privacy.title}</a>
+        </Link>
+      </div>
     </div>
   </footer>
 )

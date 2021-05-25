@@ -25,15 +25,17 @@ type TProps = {
 export const CardSmall = (props: TProps) => {
   const { type, title, description, linkText } = props
 
-  const [height, setHeight] = useState<number | 'auto'>(0)
+  const [height, setHeight] = useState<0 | 'auto'>(0)
 
-  const handleToggle = () => setHeight(height === 0 ? 'auto' : 0)
+  const handleEnter = () => setHeight('auto')
+
+  const handleLeave = () => setHeight(0)
 
   return (
     <div
       className={cx(css.root, type && css[type])}
-      onMouseEnter={handleToggle}
-      onMouseLeave={handleToggle}
+      onMouseEnter={handleEnter}
+      onMouseLeave={handleLeave}
     >
       <div className={css.content}>
         <div className={css.title}>{title}</div>

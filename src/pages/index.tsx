@@ -4,6 +4,7 @@ import { CardSmall, CardLarge, CardMedium, Modal } from '~/components/atoms'
 import { InnerMap, PopupMaster, PopupResearch } from '~/components/molecules'
 import { Hero, HeroMobile, Header } from '~/components/organisms'
 import { LWithFooter } from '~/components/layouts'
+import { allRoutes } from '~/utils/config'
 import css from './index.module.scss'
 
 const Home: NextPage = () => {
@@ -61,9 +62,9 @@ const Home: NextPage = () => {
           <div className={css.cardsContainer}>
             <CardSmall
               title="Delicacies and Souvenirs"
-              linkText="Shop"
+              linkText={allRoutes.shop.title}
               description="Our shop offers specially made Viennese and „House of Strauss“ souvenirs along with culinary delicacies."
-              linkHref="/shop"
+              linkHref={allRoutes.shop.url}
             />
             <CardSmall
               type="music"

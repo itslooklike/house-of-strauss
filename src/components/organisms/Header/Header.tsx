@@ -4,7 +4,7 @@ import cx from 'classnames'
 import { Socials, Logo } from '~/components/atoms'
 import { MenuMobile } from '~/components/molecules'
 import { IconMenu } from '~/icons'
-import { menu } from '~/utils/config'
+import { menu, allRoutes } from '~/utils/config'
 import css from './Header.module.scss'
 
 type TProps = {
@@ -105,13 +105,13 @@ export const Header = ({ type, mobileDark }: TProps) => {
                 </div>
               </li>
               <li className={css.navListItem}>
-                <Link href="/news">
-                  <a>News</a>
+                <Link href={allRoutes.news.url}>
+                  <a>{allRoutes.news.title}</a>
                 </Link>
               </li>
               <li className={cx(css.navListItem, css.active)}>
-                <Link href="/tickets">
-                  <a>Tickets</a>
+                <Link href={allRoutes.tickets.url}>
+                  <a>{allRoutes.tickets.title}</a>
                 </Link>
               </li>
             </ul>

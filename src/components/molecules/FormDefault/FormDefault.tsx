@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { Input, ButtonForm } from '~/components/atoms'
 import { IconCheck } from '~/icons'
+import { allRoutes } from '~/utils/config'
 import css from './FormDefault.module.scss'
 
 type TProps = {
@@ -27,7 +28,7 @@ export const FormDefault = ({ title, mobileLight }: TProps) => (
       </ButtonForm>
       <span className={css.policy}>
         By submitting you accept our{' '}
-        <Link href="/privacy">
+        <Link href={allRoutes.privacy.url}>
           <a className={css.policyLink}>privacy policy</a>
         </Link>
       </span>
