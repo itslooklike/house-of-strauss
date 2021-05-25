@@ -1,3 +1,4 @@
+export { default as IconArrowUpRight } from './assets/icon-arrow-up-right.svg'
 export { default as IconArrow } from './assets/icon-arrow.svg'
 export { default as IconCheck } from './assets/icon-checkmark.svg'
 export { default as IconCross } from './assets/icon-cross.svg'

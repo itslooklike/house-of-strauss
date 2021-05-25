@@ -15,7 +15,10 @@ export const Modal: React.FC = ({ children }) => {
 
   return (
     <ClientOnlyPortal>
-      <div className={css.root}>{children}</div>
+      <div className={css.root}>
+        <div className={css.backdrop} />
+        <div>{children}</div>
+      </div>
     </ClientOnlyPortal>
   )
 }
