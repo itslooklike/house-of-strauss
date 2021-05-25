@@ -1,6 +1,6 @@
 import cx from 'classnames'
 import Link from 'next/link'
-import { Socials, Logo } from '~/components/atoms'
+import { Socials, Logo, Region } from '~/components/atoms'
 import { IconCross } from '~/icons'
 import { menu, allRoutes } from '~/utils/config'
 import css from './MenuMobile.module.scss'
@@ -16,7 +16,9 @@ export const MenuMobile = ({ onClick }: TProps) => (
       <div className={css.logoWrap}>
         <Logo />
       </div>
-      <div className={css.regionWrap}>En *</div>
+      <div>
+        <Region />
+      </div>
     </div>
 
     <div className={css.content}>

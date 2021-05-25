@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
 import cx from 'classnames'
-import { Socials, Logo } from '~/components/atoms'
+import { Socials, Logo, Region } from '~/components/atoms'
 import { MenuMobile } from '~/components/molecules'
 import { IconMenu } from '~/icons'
 import { menu, allRoutes } from '~/utils/config'
@@ -116,7 +116,9 @@ export const Header = ({ type, mobileDark }: TProps) => {
               </li>
             </ul>
           </nav>
-          <div className={css.langBlock}>En *</div>
+          <div className={css.langBlock}>
+            <Region />
+          </div>
         </div>
       </div>
     </>
