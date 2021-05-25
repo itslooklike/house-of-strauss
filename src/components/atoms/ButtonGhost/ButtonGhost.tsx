@@ -2,7 +2,7 @@ import cx from 'classnames'
 import css from './ButtonGhost.module.scss'
 
 type TProps = {
-  onClick: VoidFunction
+  onClick?: VoidFunction
 }
 
 export const ButtonGhost: React.FC<TProps> = (props) => {

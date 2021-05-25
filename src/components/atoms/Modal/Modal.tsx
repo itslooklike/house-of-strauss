@@ -11,17 +11,17 @@ type TProps = {
 
 export const Modal: React.FC<TProps> = ({ children, onClose }) => {
   useEffect(() => {
-    document.querySelector('body')?.classList.add(globalClass)
+    document.querySelector('html')?.classList.add(globalClass)
 
     return () => {
-      document.querySelector('body')?.classList.remove(globalClass)
+      document.querySelector('html')?.classList.remove(globalClass)
     }
   }, [])
 
   return (
     <ClientOnlyPortal>
       <div className={css.root}>
-        <div className={css.backdrop} />
+        <div className={css.backdrop} onClick={onClose} />
         <div className={css.popup}>
           <div className={css.popupClose} onClick={onClose}>
             <IconCross width="20" />

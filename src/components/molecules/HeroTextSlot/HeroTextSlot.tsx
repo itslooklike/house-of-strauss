@@ -1,52 +1,57 @@
 import { useState } from 'react'
 import AnimateHeight from 'react-animate-height'
 import Link from 'next/link'
-import { ButtonGhost, Modal } from '~/components/atoms'
-import { PopupMaster } from '~/components/molecules'
+import { ButtonGhost } from '~/components/atoms'
 import css from './HeroTextSlot.module.scss'
+
+type TLink = {
+  linkUrl: string
+}
+
+type TButton = {
+  onButtonClick: VoidFunction
+}
 
 type TProps = {
   title: string
   text: string
   link: string
-  linkUrl: string
   onMouseEnter: VoidFunction
-}
+} & (TLink | TButton)
 
-export const HeroTextSlot = ({ title, text, link, linkUrl, onMouseEnter }: TProps) => {
-  const [show, setShow] = useState(false)
+export const HeroTextSlot = (props: TProps) => {
+  const { title, text, link, onMouseEnter } = props
 
-  const [height, setHeight] = useState<number | 'auto'>(0)
+  const [height, setHeight] = useState<0 | 'auto'>(0)
 
-  const handleToggle = () => setHeight(height === 0 ? 'auto' : 0)
+  const handleScrollShow = () => setHeight('auto')
 
-  const handleShow = () => setShow(true)
-
-  const handleClose = () => setShow(false)
+  const handleScrollHide = () => setHeight(0)
 
   return (
     <>
-      {show && (
-        <Modal onClose={handleClose}>
-          <PopupMaster />
-        </Modal>
-      )}
       <div
         className={css.root}
         onMouseEnter={() => {
           onMouseEnter()
-          handleToggle()
+          handleScrollShow()
         }}
-        onMouseLeave={handleToggle}
+        onMouseLeave={handleScrollHide}
       >
         <div className={css.title}>{title}</div>
         <AnimateHeight height={height} animateOpacity className="lol">
           <div className={css.content}>
             <div className={css.subtitle}>{text}</div>
             <div>
-              {/* <Link href={linkUrl}> */}
-              <ButtonGhost onClick={handleShow}>{link}</ButtonGhost>
-              {/* </Link> */}
+              {'onButtonClick' in props ? (
+                <ButtonGhost onClick={props.onButtonClick}>{link}</ButtonGhost>
+              ) : (
+                <Link href={props.linkUrl}>
+                  <a>
+                    <ButtonGhost>{link}</ButtonGhost>
+                  </a>
+                </Link>
+              )}
             </div>
           </div>
         </AnimateHeight>

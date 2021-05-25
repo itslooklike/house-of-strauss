@@ -33,6 +33,11 @@ html {
   text-size-adjust: none;
 }
 
+html.modal-is-open {
+  padding-right: 15px;
+  overflow: hidden;
+}
+
 body {
   position: relative;
   min-width: 320px;
@@ -43,10 +48,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-tap-highlight-color: transparent;
-}
-
-body.modal-is-open {
-  overflow: hidden;
 }
 
 a {
