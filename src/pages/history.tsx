@@ -1,3 +1,4 @@
+import cx from 'classnames'
 import type { NextPage } from 'next'
 import { WrapContent, Logo } from '~/components/atoms'
 import { Header } from '~/components/organisms'
@@ -16,8 +17,8 @@ const History: NextPage = () => (
           <img className={css.image} width="500" src="/images/image-history.jpg" alt="place" />
         </div>
         <div className={css.col2}>
-          <h1 className={css.title}>1837</h1>
-          <div className={css.textBlock}>
+          <h1 className={cx(css.title, css.preAnimate)}>1837</h1>
+          <div className={cx(css.textBlock, css.preAnimate)}>
             <p>
               Der Wiener Bürger Ferdinand Zögernitz lässt eine Residenz im Biedermeierstil auf
               ehemaligem kaiserlichen Besitz erbauen. Das alte Casino Zögernitz wird am 21. Juni des

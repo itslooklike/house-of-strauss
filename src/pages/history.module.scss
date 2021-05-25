@@ -9,6 +9,12 @@
   font-size: 120px;
   font-family: Begum Sans;
   line-height: 143px;
+  animation: show-to-up 2s forwards 500ms;
+
+  &.preAnimate {
+    transform: translateY(100px);
+    opacity: 0;
+  }
 }
 
 .content {
@@ -19,6 +25,7 @@
 .image {
   width: 100%;
   max-width: 500px;
+  animation: show-to-up 2s forwards;
 }
 
 .col2 {
@@ -29,4 +36,23 @@
 .textBlock {
   max-width: 550px;
   padding-left: 100px;
+  font-size: 22px;
+  line-height: 30px;
+  animation: show-to-up 2s forwards 1s;
+
+  &.preAnimate {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+}
+
+@keyframes show-to-up {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
