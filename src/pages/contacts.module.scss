@@ -1,0 +1,30 @@
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.title {
+  margin: 0 0 30px;
+  font-size: 40px;
+  font-family: Begum Sans;
+  line-height: 48px;
+}
+
+.text {
+  margin: 0;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.col1 {
+  max-width: 370px;
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+
+.mapWrap {
+  width: 100%;
+  max-width: 800px;
+  height: 350px;
+}
