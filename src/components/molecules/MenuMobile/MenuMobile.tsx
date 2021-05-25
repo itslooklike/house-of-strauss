@@ -1,4 +1,5 @@
 import cx from 'classnames'
+import Link from 'next/link'
 import { Socials, Logo } from '~/components/atoms'
 import { IconCross } from '~/icons'
 import { menu } from '~/utils/config'
@@ -21,14 +22,14 @@ export const MenuMobile = ({ onClick }: TProps) => (
     <div className={css.content}>
       <div className={css.tabs}>
         <div>
-          <a className={cx(css.tab, css.active)} href="#">
-            Tickets
-          </a>
+          <Link href="/tickets">
+            <a className={cx(css.tab, css.active)}>Tickets</a>
+          </Link>
         </div>
         <div>
-          <a className={css.tab} href="#">
-            News
-          </a>
+          <Link href="/news">
+            <a className={css.tab}>News</a>
+          </Link>
         </div>
       </div>
 
@@ -37,9 +38,9 @@ export const MenuMobile = ({ onClick }: TProps) => (
           <li className={css.listTitle}>Visit</li>
           {menu[0].map((item, index) => (
             <li key={index}>
-              <a className={css.link} href={item.url}>
-                {item.title}
-              </a>
+              <Link href={item.url}>
+                <a className={css.link}>{item.title}</a>
+              </Link>
             </li>
           ))}
         </ul>
@@ -47,9 +48,9 @@ export const MenuMobile = ({ onClick }: TProps) => (
           <li className={css.listTitle}>More</li>
           {menu[1].map((item, index) => (
             <li key={index}>
-              <a className={css.link} href={item.url}>
-                {item.title}
-              </a>
+              <Link href={item.url}>
+                <a className={css.link}>{item.title}</a>
+              </Link>
             </li>
           ))}
         </ul>

@@ -82,9 +82,9 @@ export const Header = ({ type, mobileDark }: TProps) => {
                   <ul className={css.innerMenuList}>
                     {menu[0].map((item, index) => (
                       <li key={index}>
-                        <a href={item.url} className={css.innerMenuListItem}>
-                          {item.title}
-                        </a>
+                        <Link href={item.url}>
+                          <a className={css.innerMenuListItem}>{item.title}</a>
+                        </Link>
                       </li>
                     ))}
                   </ul>
@@ -96,15 +96,19 @@ export const Header = ({ type, mobileDark }: TProps) => {
                   <ul className={css.innerMenuList}>
                     {menu[1].map((item, index) => (
                       <li key={index}>
-                        <a href={item.url} className={css.innerMenuListItem}>
-                          {item.title}
-                        </a>
+                        <Link href={item.url}>
+                          <a className={css.innerMenuListItem}>{item.title}</a>
+                        </Link>
                       </li>
                     ))}
                   </ul>
                 </div>
               </li>
-              <li className={css.navListItem}>News</li>
+              <li className={css.navListItem}>
+                <Link href="/news">
+                  <a>News</a>
+                </Link>
+              </li>
               <li className={cx(css.navListItem, css.active)}>
                 <Link href="/tickets">
                   <a>Tickets</a>

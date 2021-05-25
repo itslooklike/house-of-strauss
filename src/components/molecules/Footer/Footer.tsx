@@ -1,5 +1,6 @@
+import Link from 'next/link'
 import { Socials } from '~/components/atoms'
-import { menu } from '~/utils/config'
+import { menu, subMenu } from '~/utils/config'
 import css from './Footer.module.scss'
 
 export const Footer = () => (
@@ -16,9 +17,9 @@ export const Footer = () => (
         <p className={css.textLight}>Visit</p>
         {menu[0].map((item, index) => (
           <li key={index}>
-            <a className={css.listLink} href={item.url}>
-              {item.title}
-            </a>
+            <Link href={item.url}>
+              <a className={css.listLink}>{item.title}</a>
+            </Link>
           </li>
         ))}
       </ul>
@@ -26,9 +27,9 @@ export const Footer = () => (
         <p className={css.textLight}>More</p>
         {menu[1].map((item, index) => (
           <li key={index}>
-            <a className={css.listLink} href={item.url}>
-              {item.title}
-            </a>
+            <Link href={item.url}>
+              <a className={css.listLink}>{item.title}</a>
+            </Link>
           </li>
         ))}
       </ul>
@@ -36,16 +37,13 @@ export const Footer = () => (
       <div className={css.bottomSlot}>
         <p className={css.textLight}>© House of Strauss</p>
       </div>
-      <div className={css.bottomSlot}>
-        <a className={css.textMainLink} href="#">
-          Imprint
-        </a>
-      </div>
-      <div className={css.bottomSlot}>
-        <a className={css.textMainLink} href="#">
-          Privacy Policy
-        </a>
-      </div>
+      {subMenu.map((item, index) => (
+        <div key={index} className={css.bottomSlot}>
+          <Link href={item.url}>
+            <a className={css.textMainLink}>{item.title}</a>
+          </Link>
+        </div>
+      ))}
     </div>
   </footer>
 )

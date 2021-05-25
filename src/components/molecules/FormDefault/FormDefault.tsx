@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { Input, ButtonForm } from '~/components/atoms'
 import { IconCheck } from '~/icons'
 import css from './FormDefault.module.scss'
@@ -26,9 +27,9 @@ export const FormDefault = ({ title, mobileLight }: TProps) => (
       </ButtonForm>
       <span className={css.policy}>
         By submitting you accept our{' '}
-        <a className={css.policyLink} href="#">
-          privacy policy
-        </a>
+        <Link href="/privacy">
+          <a className={css.policyLink}>privacy policy</a>
+        </Link>
       </span>
     </div>
   </form>

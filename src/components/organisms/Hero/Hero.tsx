@@ -35,14 +35,14 @@ export const Hero = () => {
               onMouseEnter={handleHover2}
               title="Concerts"
               text="A musical evening in Vienna"
-              link="Coming soon"
+              link="Reservation"
               linkUrl="/concerts"
             />
             <HeroTextSlot
               onMouseEnter={handleHover3}
               title="Restaurant"
               text="A musical evening in Vienna"
-              link="Reservation"
+              link="Coming soon"
               onButtonClick={handleShow}
             />
           </div>

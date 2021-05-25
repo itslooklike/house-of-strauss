@@ -43,13 +43,13 @@ const Home: NextPage = () => {
             type="var2"
             title="Concerts"
             text="A musical evening in Vienna"
-            link="Coming soon"
+            link="Reservation"
           />
           <HeroMobile
             type="var3"
             title="Restaurant"
             text="A musical evening in Vienna"
-            link="Reservation"
+            link="Coming soon"
           />
         </div>
         <div className={css.mainBlock}>
