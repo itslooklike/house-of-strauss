@@ -1,10 +1,11 @@
 import type { NextPage } from 'next'
-import { Footer, FormDefault } from '~/components/molecules'
+import { FormDefault } from '~/components/molecules'
 import { Header } from '~/components/organisms'
+import { LWithFooter } from '~/components/layouts'
 import css from './museum.module.scss'
 
 const Museum: NextPage = () => (
-  <div>
+  <LWithFooter>
     <Header mobileDark />
     <div className={css.hero} />
     <main className={css.main}>
@@ -21,8 +22,7 @@ const Museum: NextPage = () => (
         </div>
       </div>
     </main>
-    <Footer />
-  </div>
+  </LWithFooter>
 )
 
 export default Museum

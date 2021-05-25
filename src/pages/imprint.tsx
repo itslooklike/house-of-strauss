@@ -1,11 +1,11 @@
 import type { NextPage } from 'next'
 import { WrapContent } from '~/components/atoms'
-import { Footer } from '~/components/molecules'
 import { Header } from '~/components/organisms'
+import { LWithFooter } from '~/components/layouts'
 import css from './imprint.module.scss'
 
 const Imprint: NextPage = () => (
-  <div>
+  <LWithFooter>
     <Header type="dark" />
     <WrapContent>
       <div className={css.content}>
@@ -28,8 +28,7 @@ const Imprint: NextPage = () => (
         </p>
       </div>
     </WrapContent>
-    <Footer />
-  </div>
+  </LWithFooter>
 )
 
 export default Imprint

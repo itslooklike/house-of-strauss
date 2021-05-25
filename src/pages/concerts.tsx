@@ -1,10 +1,10 @@
 import type { NextPage } from 'next'
-import { Footer } from '~/components/molecules'
 import { Header } from '~/components/organisms'
+import { LWithFooter } from '~/components/layouts'
 import css from './concerts.module.scss'
 
 const Concerts: NextPage = () => (
-  <div>
+  <LWithFooter>
     <Header type="dark" />
     <div className={css.hero} />
     <main className={css.inner}>
@@ -23,8 +23,7 @@ const Concerts: NextPage = () => (
         <div className={css.pageTitle}>Concerts</div>
       </div>
     </main>
-    <Footer />
-  </div>
+  </LWithFooter>
 )
 
 export default Concerts
