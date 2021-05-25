@@ -23,7 +23,14 @@
 .popup {
   position: relative;
   max-width: 480px;
-  background-color: var(--superlight-creme);
+  background-color: #fff;
+}
+
+.popupClose {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 35px;
 }
 
 .popupInner {

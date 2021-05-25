@@ -1,8 +1,8 @@
-/* eslint-disable react/jsx-props-no-spreading */
 import cx from 'classnames'
 import css from './ButtonForm.module.scss'
 
 type TProps = {
+  theme?: 'mint' | 'light-purple'
   mobileLight?: boolean
   blank?: boolean
   href?: string
@@ -11,13 +11,15 @@ type TProps = {
 }
 
 export const ButtonForm: React.FC<TProps> = (props) => {
-  const { children, className, mobileLight, href, blank, ...rest } = props
+  const { children, className, mobileLight, href, blank, theme, ...rest } = props
+
+  const styles = cx(css.buttonForm, mobileLight && css.mobileLight, theme && css[theme], className)
 
   if (href) {
     return (
       <a
         href={href}
-        className={cx(css.buttonForm, mobileLight && css.mobileLight, className)}
+        className={styles}
         {...(blank ? { target: '_blank', rel: 'noreferrer' } : {})}
         {...rest}
       >
@@ -27,11 +29,7 @@ export const ButtonForm: React.FC<TProps> = (props) => {
   }
 
   return (
-    <button
-      type="button"
-      className={cx(css.buttonForm, mobileLight && css.mobileLight, className)}
-      {...rest}
-    >
+    <button type="button" className={styles} {...rest}>
       {children}
     </button>
   )

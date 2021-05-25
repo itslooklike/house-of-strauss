@@ -1,12 +1,15 @@
-/* eslint-disable react/jsx-props-no-spreading */
-import React from 'react'
+import cx from 'classnames'
 import css from './ButtonGhost.module.scss'
 
-export const ButtonGhost: React.FC<React.ComponentProps<'button'>> = (props) => {
+type TProps = {
+  onClick: VoidFunction
+}
+
+export const ButtonGhost: React.FC<TProps> = (props) => {
   const { children, ...rest } = props
 
   return (
-    <button type="button" className={css.root} {...rest}>
+    <button type="button" className={cx(css.root)} {...rest}>
       {children}
     </button>
   )

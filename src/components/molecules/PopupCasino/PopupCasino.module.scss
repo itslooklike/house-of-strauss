@@ -1,0 +1,38 @@
+.popupRoot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.popupTitle {
+  color: var(--salon);
+}
+
+.popupSubtitle {
+  margin: 0 0 40px;
+  color: var(--salon);
+  font-size: 20px;
+  font-family: 'Sign Maker JNL';
+  line-height: 23px;
+  text-align: center;
+}
+
+.popupText {
+  margin: 0 0 30px;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+}
+
+.popupLink {
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.popupButtonWrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}

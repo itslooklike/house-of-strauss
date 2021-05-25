@@ -1,5 +1,3 @@
-/* eslint-disable react/jsx-props-no-spreading */
-
 import cx from 'classnames'
 import css from './Input.module.scss'
 

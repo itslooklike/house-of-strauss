@@ -1,0 +1,1 @@
+export { PopupResearch } from './PopupResearch'
