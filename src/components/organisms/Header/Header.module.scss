@@ -57,10 +57,6 @@
   margin-right: auto;
   color: currentColor;
 
-  & svg path {
-    fill: currentColor;
-  }
-
   @include mediaMaxMd {
     display: none;
   }
@@ -85,10 +81,6 @@
 .logoWrap {
   margin-right: auto;
   margin-left: auto;
-
-  svg path {
-    fill: currentColor;
-  }
 
   @include mediaMinMd {
     position: absolute;
