@@ -26,21 +26,21 @@ export const Hero = () => {
           <div className={css.contentWrap}>
             <HeroTextSlot
               onMouseEnter={handleHover1}
-              title="Museum"
+              logo="Museum"
               text="Eintauchen in die Strauss Dynastie"
               link="More"
               linkUrl="/museum"
             />
             <HeroTextSlot
               onMouseEnter={handleHover2}
-              title="Concerts"
+              logo="Concerts"
               text="A musical evening in Vienna"
               link="Reservation"
               linkUrl="/concerts"
             />
             <HeroTextSlot
               onMouseEnter={handleHover3}
-              title="Restaurant"
+              logo="Restaurant"
               text="A musical evening in Vienna"
               link="Coming soon"
               onButtonClick={handleShow}
