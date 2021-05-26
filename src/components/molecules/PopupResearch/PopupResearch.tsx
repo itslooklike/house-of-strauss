@@ -1,5 +1,6 @@
 import { ButtonForm } from '~/components/atoms'
 import { IconArrowUpRight } from '~/icons'
+import { partners } from '~/utils/config'
 import css from './PopupResearch.module.scss'
 
 export const PopupResearch = () => (
@@ -9,7 +10,7 @@ export const PopupResearch = () => (
       To learn more about the Strauss Research, here you will be forwarded to their website.
     </p>
     <div className={css.buttonWrap}>
-      <ButtonForm href="https://www.johann-strauss.at/" blank theme="mint">
+      <ButtonForm href={partners.research.site} blank theme="mint">
         <IconArrowUpRight width="18" />
         &nbsp;Website
       </ButtonForm>

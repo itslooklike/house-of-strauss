@@ -1,5 +1,7 @@
 import { ButtonForm, Logo } from '~/components/atoms'
 import { IconArrowUpRight } from '~/icons'
+import { fmtTel } from '~/utils/fmtTel'
+import { partners } from '~/utils/config'
 import css from './PopupCasino.module.scss'
 
 export const PopupCasino = () => (
@@ -12,14 +14,14 @@ export const PopupCasino = () => (
       The Bistro & Brasserie has it’s own website. To see the menu or do a booking, please visit the
       website or contact us under:
     </div>
-    <a className={css.popupLink} href="mailto:bistro@zoegernitz.at">
-      bistro@zoegernitz.at
+    <a className={css.popupLink} href={`mailto:${partners.casino.email}`}>
+      {partners.casino.email}
     </a>
-    <a className={css.popupLink} href="tel:+431122123445">
-      +43 11 22 1234 45
+    <a className={css.popupLink} href={`tel:${fmtTel(partners.casino.tel)}`}>
+      {partners.casino.tel}
     </a>
     <div className={css.popupButtonWrap}>
-      <ButtonForm href="www.???.at" blank>
+      <ButtonForm href={partners.casino.site} blank>
         <IconArrowUpRight width="18" />
         &nbsp;Website
       </ButtonForm>
