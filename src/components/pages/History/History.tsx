@@ -2,7 +2,7 @@ import cx from 'classnames'
 import { WrapContent, Logo } from '~/components/atoms'
 import { Header } from '~/components/organisms'
 import { LWithFooter } from '~/components/layouts'
-import css from './history.module.scss'
+import css from './History.module.scss'
 
 export const History = () => (
   <LWithFooter>
