@@ -36,19 +36,19 @@ const Home: NextPage = () => {
         <div className={css.heroWrapMobile}>
           <HeroMobile
             type="var1"
-            title="Museum"
+            logo="Museum"
             text="Eintauchen in die Strauss Dynastie"
             link="More"
           />
           <HeroMobile
             type="var2"
-            title="Concerts"
+            logo="Concerts"
             text="A musical evening in Vienna"
             link="Reservation"
           />
           <HeroMobile
             type="var3"
-            title="Restaurant"
+            logo="Restaurant"
             text="A musical evening in Vienna"
             link="Coming soon"
           />

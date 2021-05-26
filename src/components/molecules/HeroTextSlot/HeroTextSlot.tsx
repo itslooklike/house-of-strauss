@@ -4,7 +4,6 @@ import { useState } from 'react'
 import AnimateHeight from 'react-animate-height'
 import Link from 'next/link'
 import { ButtonGhost, LogoBrand } from '~/components/atoms'
-
 import css from './HeroTextSlot.module.scss'
 
 type TLink = {
@@ -41,7 +40,7 @@ export const HeroTextSlot = (props: TProps) => {
         }}
         onMouseLeave={handleScrollHide}
       >
-        <div className={css.title}>
+        <div>
           <LogoBrand logo={logo} />
         </div>
         <AnimateHeight height={height} animateOpacity>
