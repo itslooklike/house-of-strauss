@@ -47,7 +47,7 @@ export const partners = {
   casino: {
     email: 'bistro@zoegernitz.at',
     tel: '+43 11 22 1234 45',
-    site: 'www.google.com', // FIXME: need correct
+    site: 'https://google.com', // FIXME: need correct
   },
   masterclass: {
     site: 'https://emi-vienna.com/en',
