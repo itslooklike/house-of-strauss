@@ -7,7 +7,7 @@ export const allRoutes = {
   brasserie: { title: 'Brasserie', url: '/#' },
   shop: { title: 'Shop', url: '/shop' },
   directions: { title: 'Directions', url: '/#' },
-  events: { title: 'Events', url: '/#' },
+  events: { title: 'Events', url: '/events' },
   research: { title: 'Research', url: '/#' },
   masterclasses: { title: 'Masterclasses', url: '/#' },
   history: { title: 'History', url: '/history' },

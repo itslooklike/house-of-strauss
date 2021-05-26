@@ -1,0 +1,27 @@
+.title {
+  margin: 0 0 30px;
+  font-size: 40px;
+  font-family: Begum Sans;
+  line-height: 48px;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.listTitle {
+  font-size: 22px;
+  line-height: 30px;
+}
+
+.list {
+  font-size: 22px;
+  line-height: 30px;
+}
+
+.image {
+  width: 100%;
+  max-width: 545px;
+}
