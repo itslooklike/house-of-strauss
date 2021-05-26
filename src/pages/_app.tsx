@@ -1,6 +1,6 @@
 import 'normalize.css'
-import './font-face.css'
-import './globals.css'
+import './font-face.scss'
+import './globals.scss'
 
 import Head from 'next/head'
 import type { AppProps } from 'next/app'
