@@ -18,6 +18,7 @@
     "@typescript-eslint/eslint-plugin": "^4.24.0",
     "@typescript-eslint/parser": "^4.24.0",
     "classnames": "^2.3.1",
+    "formik": "^2.2.8",
     "google-map-react": "^2.1.9",
     "next": "10.2.2",
     "next-compose-plugins": "^2.2.1",
