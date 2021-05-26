@@ -3,19 +3,9 @@
 import { useState } from 'react'
 import AnimateHeight from 'react-animate-height'
 import Link from 'next/link'
-import { ButtonGhost } from '~/components/atoms'
-import { default as BrandMuseum } from './assets/image-hero-museum.svg'
-import { default as BrandConcerts } from './assets/image-hero-concerts.svg'
-import { default as BrandRestaurant } from './assets/image-hero-restaurant.svg'
+import { ButtonGhost, LogoBrand } from '~/components/atoms'
+
 import css from './HeroTextSlot.module.scss'
-
-const MapIcons = {
-  Museum: BrandMuseum,
-  Concerts: BrandConcerts,
-  Restaurant: BrandRestaurant,
-}
-
-type TLogos = keyof typeof MapIcons
 
 type TLink = {
   linkUrl: string
@@ -26,16 +16,11 @@ type TButton = {
 }
 
 type TProps = {
-  logo: TLogos
+  logo: React.ComponentProps<typeof LogoBrand>['logo']
   text: string
   link: string
   onMouseEnter: VoidFunction
 } & (TLink | TButton)
-
-const RenderLogo = ({ logo }: { logo: TLogos }) => {
-  const Component = MapIcons[logo]
-  return <Component />
-}
 
 export const HeroTextSlot = (props: TProps) => {
   const { logo, text, link, onMouseEnter } = props
@@ -57,7 +42,7 @@ export const HeroTextSlot = (props: TProps) => {
         onMouseLeave={handleScrollHide}
       >
         <div className={css.title}>
-          <RenderLogo logo={logo} />
+          <LogoBrand logo={logo} />
         </div>
         <AnimateHeight height={height} animateOpacity>
           <div className={css.content}>

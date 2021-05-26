@@ -1,6 +1,5 @@
 import cx from 'classnames'
 import { ButtonGhost } from '~/components/atoms'
-
 import css from './HeroMobile.module.scss'
 
 type TProps = {
