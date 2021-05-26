@@ -1,19 +1,25 @@
-import { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import { DropDown } from '~/utils/DropDown'
 import { IconToggler } from '~/icons'
 import css from './Region.module.scss'
 
-const regions = ['En', 'De']
+const regions = ['en', 'de']
 
 export const Region = () => {
-  const [lang, setLang] = useState(regions[0])
+  const { i18n } = useTranslation()
 
   return (
     <DropDown
       content={
         <div className={css.list}>
           {regions.map((item, index) => (
-            <li className={css.item} key={index} onClick={() => setLang(item)}>
+            <li
+              className={css.item}
+              key={index}
+              onClick={() => {
+                i18n.changeLanguage(item)
+              }}
+            >
               {item}
             </li>
           ))}
@@ -21,7 +27,7 @@ export const Region = () => {
       }
     >
       <div className={css.root}>
-        <span className={css.lang}>{lang}</span>&nbsp;
+        <span className={css.lang}>{i18n.language}</span>&nbsp;
         <IconToggler width={8} />
       </div>
     </DropDown>

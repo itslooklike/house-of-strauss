@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import type { NextPage } from 'next'
 import { CardSmall, CardLarge, CardMedium, Modal } from '~/components/atoms'
 import { InnerMap, PopupMaster, PopupResearch } from '~/components/molecules'
@@ -15,6 +16,8 @@ const Home: NextPage = () => {
   const [showResearch, setShowResearch] = useState(false)
   const handleShowResearch = () => setShowResearch(true)
   const handleCloseResearch = () => setShowResearch(false)
+
+  const { t } = useTranslation()
 
   return (
     <>
@@ -54,10 +57,7 @@ const Home: NextPage = () => {
           />
         </div>
         <div className={css.mainBlock}>
-          <div className={css.contentTitle}>
-            House of Strauss offers a unique musical and culinary experience in Vienna, the Capital
-            of Music
-          </div>
+          <div className={css.contentTitle}>{t('House')}</div>
           <CardLarge />
           <div className={css.cardsContainer}>
             <CardSmall

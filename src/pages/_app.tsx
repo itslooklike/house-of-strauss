@@ -5,6 +5,8 @@ import '~/utils/DropDown/DropDown.scss'
 import './font-face.scss'
 import './globals.scss'
 
+import '../i18n'
+
 import Head from 'next/head'
 import type { AppProps } from 'next/app'
 
