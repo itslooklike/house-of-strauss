@@ -1,4 +1,5 @@
 import 'normalize.css'
+import './font-face.css'
 import './globals.css'
 
 import Head from 'next/head'

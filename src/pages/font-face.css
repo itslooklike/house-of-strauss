@@ -1,0 +1,41 @@
+/* https://developer.mozilla.org/ru/docs/Web/CSS/font-weight */
+
+@font-face {
+  font-weight: 300;
+  font-family: 'BR Hendrix';
+  font-style: normal;
+  src: url('/fonts/br-hendrix-light-webfont.woff2') format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-weight: 400;
+  font-family: 'BR Hendrix';
+  font-style: normal;
+  src: url('/fonts/br-hendrix-regular-webfont.woff2') format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-weight: 500;
+  font-family: 'BR Hendrix';
+  font-style: normal;
+  src: url('/fonts/br-hendrix-medium-webfont.woff2') format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-weight: 600;
+  font-family: 'BR Hendrix';
+  font-style: normal;
+  src: url('/fonts/br-hendrix-semibold-webfont.woff2') format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: 'BR Hendrix';
+  font-style: normal;
+  src: url('/fonts/br-hendrix-bold-webfont.woff2') format('woff2');
+  font-display: swap;
+}
