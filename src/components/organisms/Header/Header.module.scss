@@ -6,7 +6,7 @@
   right: 0;
   left: 0;
   z-index: var(--zIndex-header);
-  color: var(--light-text);
+  color: var(--superlight-creme);
 
   &.dark {
     color: var(--bordeaux);
@@ -106,7 +106,7 @@
     border: 1px solid currentColor;
 
     &:hover {
-      color: var(--light-text);
+      color: var(--superlight-creme);
       background-color: var(--bordeaux);
     }
   }
@@ -168,7 +168,7 @@
   transition: all 0.3s;
 
   &:hover {
-    color: var(--light-text);
+    color: var(--superlight-creme);
     background-color: var(--bordeaux);
   }
 }

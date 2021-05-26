@@ -12,13 +12,11 @@
   --superlight-creme: #fff8ed;
   --salon: #e7503e;
 
-  --light-text: #edebee;
-
   --zIndex-header: 100;
   --zIndex-modal: 101;
 
-  --font-default: 'BR Hendrix', system-ui, Arial, Helvetica, sans-serif;
-  --font-page-title: 'Begum Sans', 'BR Hendrix', system-ui, Arial, Helvetica, sans-serif;
+  --font-primary: 'BR Hendrix', system-ui, Arial, Helvetica, sans-serif;
+  --font-secondary: 'Begum Sans', 'BR Hendrix', system-ui, Arial, Helvetica, sans-serif;
 }
 
 *,
@@ -48,7 +46,7 @@ body {
   min-width: 320px;
   margin: 0;
   color: var(--bordeaux);
-  font-family: var(--font-default);
+  font-family: var(--font-primary);
   background-color: var(--superlight-creme);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
