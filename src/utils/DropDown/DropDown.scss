@@ -1,0 +1,11 @@
+.tippy-box[data-theme~='museum'] {
+  & .tippy-content {
+    padding: 0;
+    border: 0;
+  }
+
+  & .tippy-arrow {
+    z-index: 1;
+    color: var(--bordeaux);
+  }
+}

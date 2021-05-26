@@ -56,3 +56,5 @@ export const partners = {
     site: 'https://www.johann-strauss.at',
   },
 }
+
+export const gaKey = ''

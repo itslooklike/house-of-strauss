@@ -1,4 +1,7 @@
 import 'normalize.css'
+import 'tippy.js/dist/tippy.css'
+import '~/utils/DropDown/DropDown.scss'
+
 import './font-face.scss'
 import './globals.scss'
 

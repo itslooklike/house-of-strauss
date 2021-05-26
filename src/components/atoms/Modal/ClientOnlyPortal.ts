@@ -1,6 +1,5 @@
 import { useRef, useEffect, useState, FC } from 'react'
 import { createPortal } from 'react-dom'
-
 import { portalId } from '~/utils/config'
 
 export const ClientOnlyPortal: FC = ({ children }) => {

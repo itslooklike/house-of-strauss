@@ -4,7 +4,7 @@ import cx from 'classnames'
 import { Socials, Logo, Region } from '~/components/atoms'
 import { MenuMobile } from '~/components/molecules'
 import { IconMenu } from '~/icons'
-import { menu, allRoutes } from '~/utils/config'
+import { HeaderNav } from './HeaderNav'
 import css from './Header.module.scss'
 
 type TProps = {
@@ -75,46 +75,7 @@ export const Header = ({ type, mobileDark }: TProps) => {
             </Link>
           </div>
           <nav>
-            <ul className={css.navList}>
-              <li className={css.navListItem}>
-                <span>Visit</span>
-                <div className={css.innerMenuContainer}>
-                  <ul className={css.innerMenuList}>
-                    {menu[0].map((item, index) => (
-                      <li key={index}>
-                        <Link href={item.url}>
-                          <a className={css.innerMenuListItem}>{item.title}</a>
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </li>
-              <li className={css.navListItem}>
-                <span>More</span>
-                <div className={css.innerMenuContainer}>
-                  <ul className={css.innerMenuList}>
-                    {menu[1].map((item, index) => (
-                      <li key={index}>
-                        <Link href={item.url}>
-                          <a className={css.innerMenuListItem}>{item.title}</a>
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </li>
-              <li className={css.navListItem}>
-                <Link href={allRoutes.news.url}>
-                  <a>{allRoutes.news.title}</a>
-                </Link>
-              </li>
-              <li className={cx(css.navListItem, css.active)}>
-                <Link href={allRoutes.tickets.url}>
-                  <a>{allRoutes.tickets.title}</a>
-                </Link>
-              </li>
-            </ul>
+            <HeaderNav />
           </nav>
           <div className={css.langBlock}>
             <Region />

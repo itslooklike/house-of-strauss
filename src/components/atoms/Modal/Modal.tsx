@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
-import { ClientOnlyPortal } from '~/utils/ClientOnlyPortal'
 import { IconCross } from '~/icons'
+import { ClientOnlyPortal } from './ClientOnlyPortal'
 import css from './Modal.module.scss'
 
 const globalClass = 'modal-is-open'

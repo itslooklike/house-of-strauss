@@ -1,13 +1,33 @@
-.root {
-  display: inline-flex;
+@import '~/utils/mixins.scss';
+
+.navList {
+  display: flex;
   align-items: center;
+  margin: 0 0 0 auto;
+  padding: 0;
+  list-style: none;
+
+  @include mediaMaxMd {
+    display: none;
+  }
 }
 
-.lang {
-  min-width: 20px;
+.navListItem {
+  position: relative;
+  padding: 7px 14px;
+
+  &.active {
+    border: 1px solid currentColor;
+
+    &:hover {
+      color: var(--superlight-creme);
+      background-color: var(--bordeaux);
+    }
+  }
 }
 
-.list {
+.innerMenuList {
+  position: relative;
   display: grid;
   padding: 5px 0;
   color: var(--bordeaux);
@@ -16,7 +36,7 @@
   border: 1px solid var(--bordeaux);
 }
 
-.item {
+.innerMenuListItem {
   display: block;
   padding: 10px 35px;
   color: var(--bordeaux);
