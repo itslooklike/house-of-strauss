@@ -1,5 +1,5 @@
 import type { NextPage } from 'next'
-import { WrapContent } from '~/components/atoms'
+import { WrapContent, TextPageTitle } from '~/components/atoms'
 import { Header } from '~/components/organisms'
 import { LWithFooter } from '~/components/layouts'
 import css from './about.module.scss'
@@ -10,7 +10,7 @@ const About: NextPage = () => (
     <WrapContent>
       <div className={css.content}>
         <div className={css.col1}>
-          <h1 className={css.title}>About</h1>
+          <TextPageTitle>About</TextPageTitle>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
             incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud

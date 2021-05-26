@@ -1,5 +1,5 @@
 import type { NextPage } from 'next'
-import { WrapContent } from '~/components/atoms'
+import { WrapContent, TextPageTitle } from '~/components/atoms'
 import { Header } from '~/components/organisms'
 import { LWithFooter } from '~/components/layouts'
 import css from './events.module.scss'
@@ -19,7 +19,7 @@ const Events: NextPage = () => (
     <WrapContent>
       <div className={css.content}>
         <div className={css.col1}>
-          <h1 className={css.title}>Your event</h1>
+          <TextPageTitle>Your event</TextPageTitle>
           <p className={css.listTitle}>Ausstattungsbeschreibung</p>
           <ul className={css.list}>
             {eventsList.map((item, index) => (

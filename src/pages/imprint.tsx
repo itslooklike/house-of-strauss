@@ -1,5 +1,5 @@
 import type { NextPage } from 'next'
-import { WrapContent } from '~/components/atoms'
+import { WrapContent, TextPageTitle } from '~/components/atoms'
 import { Header } from '~/components/organisms'
 import { LWithFooter } from '~/components/layouts'
 import css from './imprint.module.scss'
@@ -9,7 +9,7 @@ const Imprint: NextPage = () => (
     <Header type="dark" />
     <WrapContent>
       <div className={css.content}>
-        <h1 className={css.title}>Imprint</h1>
+        <TextPageTitle>Imprint</TextPageTitle>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
           ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
