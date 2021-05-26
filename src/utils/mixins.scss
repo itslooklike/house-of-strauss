@@ -1,10 +1,11 @@
-$mdBreak: 1440px;
-$lgBreak: 1600px;
 $xlBreak: 1920px;
+$lgBreak: 1600px;
+$mdBreak: 1440px;
 
 // max-width
-@mixin mediaMaxMd {
-  @media (max-width: $mdBreak) {
+
+@mixin mediaMaxXl {
+  @media (max-width: $xlBreak) {
     @content;
   }
 }
@@ -15,11 +16,12 @@ $xlBreak: 1920px;
   }
 }
 
-@mixin mediaMaxXl {
-  @media (max-width: $xlBreak) {
+@mixin mediaMaxMd {
+  @media (max-width: $mdBreak) {
     @content;
   }
 }
+
 // --
 
 // min-width

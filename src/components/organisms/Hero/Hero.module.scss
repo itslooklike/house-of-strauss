@@ -1,11 +1,21 @@
+@import '~/utils/mixins.scss';
+
 .hero {
   position: relative;
   box-sizing: border-box;
-  height: 880px;
+  height: 850px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   transition: all 0.3s;
+
+  @include mediaMaxXl {
+    height: 815px;
+  }
+
+  @include mediaMaxLg {
+    height: 730px;
+  }
 
   &::before {
     position: absolute;
