@@ -42,6 +42,10 @@ export const Header = ({ type, mobileDark }: TProps) => {
     if (node.current) {
       observer.observe(node.current)
     }
+
+    return () => {
+      observer.disconnect()
+    }
   }, [])
 
   return (
