@@ -2,7 +2,11 @@
 
 .hero {
   height: 700px;
-  background: url('/images/image-orchester.jpg') center / cover no-repeat;
+  background-image: linear-gradient(180deg, #590c28 0%, rgba(89, 12, 40, 0) 100%),
+    url('/images/image-orchester.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .inner {

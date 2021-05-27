@@ -4,7 +4,7 @@ import css from './Concerts.module.scss'
 
 export const Concerts = () => (
   <LWithFooter>
-    <Header type="dark" />
+    <Header />
     <div className={css.hero} />
     <main className={css.inner}>
       <div className={css.content}>
