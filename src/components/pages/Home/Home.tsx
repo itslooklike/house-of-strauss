@@ -21,21 +21,21 @@ export const Home = () => {
           logo="Museum"
           text="Eintauchen in die Strauss Dynastie"
           link="More"
-          href={allRoutes.museum.url}
+          route={allRoutes.museum}
         />
         <HeroMobile
           type="var2"
           logo="Concerts"
           text="A musical evening in Vienna"
           link="Reservation"
-          href={allRoutes.concerts.url}
+          route={allRoutes.concerts}
         />
         <HeroMobile
           type="var3"
           logo="Restaurant"
           text="A musical evening in Vienna"
           link="Coming soon"
-          href={allRoutes.brasserie.url}
+          route={allRoutes.brasserie}
         />
       </div>
       <div className={css.mainBlock}>
@@ -46,21 +46,21 @@ export const Home = () => {
             title="Delicacies and Souvenirs"
             linkText={allRoutes.shop.title}
             description="Our shop offers specially made Viennese and „House of Strauss“ souvenirs along with culinary delicacies."
-            href={allRoutes.shop.url}
+            route={allRoutes.shop}
           />
           <CardSmall
             type="music"
             title="Musical Masterclasses"
             linkText="More"
             description="Young musicians from all over the world work here with internationally recognised masters to improve their skills."
-            href={allRoutes.masterclasses.url}
+            route={allRoutes.masterclasses}
           />
           <CardSmall
             type="statue"
             title="Strauss Research"
             linkText="More"
             description="The Viennese Institut for Strauss-Research (WISF) is a sponsoring association for scientific research projects relating to the Strauss family and their contemporaries, located in Casino Zögernitz."
-            href={allRoutes.research.url}
+            route={allRoutes.research}
           />
         </div>
         <div className={css.mapContainer}>

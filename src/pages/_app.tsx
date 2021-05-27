@@ -1,17 +1,17 @@
 import 'normalize.css'
 import 'tippy.js/dist/tippy.css'
 import '~/utils/DropDown/DropDown.scss'
-
 import './font-face.scss'
 import './globals.scss'
-
 import '../i18n'
+
 import React, { useState, useEffect } from 'react'
 import { useRouter } from 'next/router'
 import Head from 'next/head'
 import type { AppProps } from 'next/app'
 import { Modal } from '~/components/atoms'
 import { PopupMaster, PopupResearch, PopupCasino } from '~/components/molecules'
+import { popupParam } from '~/utils/config'
 
 function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter()
@@ -20,7 +20,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   const handleClose = () => setShow(false)
 
   useEffect(() => {
-    switch (router.query.popup) {
+    switch (router.query[popupParam]) {
       case 'master':
         setShow(<PopupMaster />)
         break
@@ -34,7 +34,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         setShow(false)
         break
     }
-  }, [router.query.popup])
+  }, [router.query])
 
   return (
     <>

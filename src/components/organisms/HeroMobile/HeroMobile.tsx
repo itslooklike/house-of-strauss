@@ -1,19 +1,20 @@
 import cx from 'classnames'
 import React from 'react'
-import Link from 'next/link'
 import { ButtonGhost, LogoBrand } from '~/components/atoms'
+import { LinkPopup } from '~/utils/LinkPopup'
+import type { TRoute } from '~/utils/config'
 import css from './HeroMobile.module.scss'
 
 type TProps = {
   logo: React.ComponentProps<typeof LogoBrand>['logo']
   text: string
   link: string
-  href: string
+  route: TRoute
   type: 'var1' | 'var2' | 'var3'
 }
 
 export const HeroMobile = (props: TProps) => {
-  const { logo, text, link, href, type } = props
+  const { logo, text, link, route, type } = props
 
   return (
     <div className={cx(css.root, css[type])}>
@@ -22,11 +23,11 @@ export const HeroMobile = (props: TProps) => {
           <LogoBrand logo={logo} />
         </div>
         <div className={css.text}>{text}</div>
-        <Link href={href}>
+        <LinkPopup href={route.url} withPopup={route.withPopup}>
           <a>
             <ButtonGhost>{link}</ButtonGhost>
           </a>
-        </Link>
+        </LinkPopup>
       </div>
     </div>
   )

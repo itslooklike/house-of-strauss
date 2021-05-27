@@ -1,15 +1,23 @@
 export const portalId = 'modal'
+export const popupParam = '__popup' as const
 
-export const allRoutes = {
+export type TRoute = {
+  title: string
+  url: string
+  withPopup?: boolean
+}
+
+export const allRoutes: { [_: string]: TRoute } = {
+  directions: { title: 'Directions', url: '/#' },
+
+  brasserie: { title: 'Brasserie', url: `?${popupParam}=casino`, withPopup: true },
+  research: { title: 'Research', url: `?${popupParam}=research`, withPopup: true },
+  masterclasses: { title: 'Masterclasses', url: `?${popupParam}=master`, withPopup: true },
   tickets: { title: 'Tickets', url: '/tickets' },
   museum: { title: 'Museum', url: '/museum' },
   concerts: { title: 'Concerts', url: '/concerts' },
-  brasserie: { title: 'Brasserie', url: '/?popup=casino' },
   shop: { title: 'Shop', url: '/shop' },
-  directions: { title: 'Directions', url: '/#' },
   events: { title: 'Events', url: '/events' },
-  research: { title: 'Research', url: '/?popup=research' },
-  masterclasses: { title: 'Masterclasses', url: '/?popup=master' },
   history: { title: 'History', url: '/history' },
   about: { title: 'About', url: '/about' },
   contact: { title: 'Contact', url: '/contacts' },

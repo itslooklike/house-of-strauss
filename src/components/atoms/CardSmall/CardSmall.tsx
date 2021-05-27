@@ -1,8 +1,9 @@
 import { useState } from 'react'
-import Link from 'next/link'
 import cx from 'classnames'
 import AnimateHeight from 'react-animate-height'
+import { LinkPopup } from '~/utils/LinkPopup'
 import { IconArrow } from '~/icons'
+import type { TRoute } from '~/utils/config'
 import css from './CardSmall.module.scss'
 
 type TProps = {
@@ -10,11 +11,11 @@ type TProps = {
   description: string
   type?: 'music' | 'statue'
   linkText: string
-  href: string
+  route: TRoute
 }
 
 export const CardSmall = (props: TProps) => {
-  const { type, title, description, linkText, href } = props
+  const { type, title, description, linkText, route } = props
 
   const [height, setHeight] = useState<0 | 'auto'>(0)
 
@@ -33,12 +34,12 @@ export const CardSmall = (props: TProps) => {
         <AnimateHeight height={height} animateOpacity>
           <div className={css.description}>{description}</div>
         </AnimateHeight>
-        <Link href={href}>
+        <LinkPopup href={route.url} withPopup={route.withPopup}>
           <a className={css.link}>
             <IconArrow height={12} />
             &nbsp;{linkText}
           </a>
-        </Link>
+        </LinkPopup>
       </div>
     </div>
   )

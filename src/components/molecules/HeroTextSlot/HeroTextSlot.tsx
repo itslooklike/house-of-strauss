@@ -1,9 +1,8 @@
-/* eslint-disable react/destructuring-assignment */
-
 import { useState } from 'react'
 import AnimateHeight from 'react-animate-height'
-import Link from 'next/link'
 import { ButtonGhost, LogoBrand } from '~/components/atoms'
+import { LinkPopup } from '~/utils/LinkPopup'
+import type { TRoute } from '~/utils/config'
 import css from './HeroTextSlot.module.scss'
 
 type TProps = {
@@ -11,11 +10,11 @@ type TProps = {
   text: string
   link: string
   onMouseEnter: VoidFunction
-  href: string
+  route: TRoute
 }
 
 export const HeroTextSlot = (props: TProps) => {
-  const { logo, text, link, href, onMouseEnter } = props
+  const { logo, text, link, route, onMouseEnter } = props
 
   const [height, setHeight] = useState<0 | 'auto'>(0)
 
@@ -40,11 +39,11 @@ export const HeroTextSlot = (props: TProps) => {
           <div className={css.content}>
             <div className={css.subtitle}>{text}</div>
             <div>
-              <Link href={href}>
+              <LinkPopup href={route.url} withPopup={route.withPopup}>
                 <a>
                   <ButtonGhost>{link}</ButtonGhost>
                 </a>
-              </Link>
+              </LinkPopup>
             </div>
           </div>
         </AnimateHeight>

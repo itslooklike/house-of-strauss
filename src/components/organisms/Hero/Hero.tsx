@@ -19,21 +19,21 @@ export const Hero = () => {
             logo="Museum"
             text="Eintauchen in die Strauss Dynastie"
             link="More"
-            href={allRoutes.museum.url}
+            route={allRoutes.museum}
           />
           <HeroTextSlot
             onMouseEnter={handleHover2}
             logo="Concerts"
             text="A musical evening in Vienna"
             link="Reservation"
-            href={allRoutes.concerts.url}
+            route={allRoutes.concerts}
           />
           <HeroTextSlot
             onMouseEnter={handleHover3}
             logo="Restaurant"
             text="A musical evening in Vienna"
             link="Coming soon"
-            href={allRoutes.brasserie.url}
+            route={allRoutes.brasserie}
           />
         </div>
       </div>

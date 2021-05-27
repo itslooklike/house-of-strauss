@@ -1,5 +1,6 @@
 import cx from 'classnames'
 import Link from 'next/link'
+import { LinkPopup } from '~/utils/LinkPopup'
 import { Socials, Logo, Region } from '~/components/atoms'
 import { IconCross } from '~/icons'
 import { menu, allRoutes } from '~/utils/config'
@@ -40,9 +41,9 @@ export const MenuMobile = ({ onClick }: TProps) => (
           <li className={css.listTitle}>Visit</li>
           {menu[0].map((item, index) => (
             <li key={index}>
-              <Link href={item.url}>
+              <LinkPopup href={item.url} withPopup={item.withPopup}>
                 <a className={css.link}>{item.title}</a>
-              </Link>
+              </LinkPopup>
             </li>
           ))}
         </ul>
@@ -50,9 +51,9 @@ export const MenuMobile = ({ onClick }: TProps) => (
           <li className={css.listTitle}>More</li>
           {menu[1].map((item, index) => (
             <li key={index}>
-              <Link href={item.url}>
+              <LinkPopup href={item.url} withPopup={item.withPopup}>
                 <a className={css.link}>{item.title}</a>
-              </Link>
+              </LinkPopup>
             </li>
           ))}
         </ul>

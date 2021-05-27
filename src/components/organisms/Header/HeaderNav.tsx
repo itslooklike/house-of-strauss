@@ -1,5 +1,6 @@
-import Link from 'next/link'
 import cx from 'classnames'
+import Link from 'next/link'
+import { LinkPopup } from '~/utils/LinkPopup'
 import { DropDown } from '~/utils/DropDown'
 import { menu, allRoutes } from '~/utils/config'
 import css from './HeaderNav.module.scss'
@@ -22,9 +23,9 @@ export const HeaderNav = () => (
                 <ul className={css.innerMenuList}>
                   {subMenu.url.map((item, indexInner) => (
                     <li key={indexInner}>
-                      <Link href={item.url}>
+                      <LinkPopup href={item.url} withPopup={item.withPopup}>
                         <a className={css.innerMenuListItem}>{item.title}</a>
-                      </Link>
+                      </LinkPopup>
                     </li>
                   ))}
                 </ul>

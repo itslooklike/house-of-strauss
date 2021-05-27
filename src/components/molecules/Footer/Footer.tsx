@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { Socials } from '~/components/atoms'
 import { menu, allRoutes } from '~/utils/config'
+import { LinkPopup } from '~/utils/LinkPopup'
 import css from './Footer.module.scss'
 
 export const Footer = () => (
@@ -17,9 +18,9 @@ export const Footer = () => (
         <p className={css.textLight}>Visit</p>
         {menu[0].map((item, index) => (
           <li key={index}>
-            <Link href={item.url}>
+            <LinkPopup href={item.url} withPopup={item.withPopup}>
               <a className={css.listLink}>{item.title}</a>
-            </Link>
+            </LinkPopup>
           </li>
         ))}
       </ul>
@@ -27,9 +28,9 @@ export const Footer = () => (
         <p className={css.textLight}>More</p>
         {menu[1].map((item, index) => (
           <li key={index}>
-            <Link href={item.url}>
+            <LinkPopup href={item.url} withPopup={item.withPopup}>
               <a className={css.listLink}>{item.title}</a>
-            </Link>
+            </LinkPopup>
           </li>
         ))}
       </ul>
