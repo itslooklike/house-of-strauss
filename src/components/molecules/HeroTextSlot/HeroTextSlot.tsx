@@ -6,23 +6,16 @@ import Link from 'next/link'
 import { ButtonGhost, LogoBrand } from '~/components/atoms'
 import css from './HeroTextSlot.module.scss'
 
-type TLink = {
-  linkUrl: string
-}
-
-type TButton = {
-  onButtonClick: VoidFunction
-}
-
 type TProps = {
   logo: React.ComponentProps<typeof LogoBrand>['logo']
   text: string
   link: string
   onMouseEnter: VoidFunction
-} & (TLink | TButton)
+  href: string
+}
 
 export const HeroTextSlot = (props: TProps) => {
-  const { logo, text, link, onMouseEnter } = props
+  const { logo, text, link, href, onMouseEnter } = props
 
   const [height, setHeight] = useState<0 | 'auto'>(0)
 
@@ -47,15 +40,11 @@ export const HeroTextSlot = (props: TProps) => {
           <div className={css.content}>
             <div className={css.subtitle}>{text}</div>
             <div>
-              {'onButtonClick' in props ? (
-                <ButtonGhost onClick={props.onButtonClick}>{link}</ButtonGhost>
-              ) : (
-                <Link href={props.linkUrl}>
-                  <a>
-                    <ButtonGhost>{link}</ButtonGhost>
-                  </a>
-                </Link>
-              )}
+              <Link href={href}>
+                <a>
+                  <ButtonGhost>{link}</ButtonGhost>
+                </a>
+              </Link>
             </div>
           </div>
         </AnimateHeight>

@@ -1,5 +1,3 @@
-/* eslint-disable react/destructuring-assignment */
-
 import { useState } from 'react'
 import Link from 'next/link'
 import cx from 'classnames'
@@ -7,23 +5,16 @@ import AnimateHeight from 'react-animate-height'
 import { IconArrow } from '~/icons'
 import css from './CardSmall.module.scss'
 
-type TLink = {
-  linkHref: string
-}
-
-type TButton = {
-  onClick: VoidFunction
-}
-
 type TProps = {
   title: string
   description: string
   type?: 'music' | 'statue'
   linkText: string
-} & (TLink | TButton)
+  href: string
+}
 
 export const CardSmall = (props: TProps) => {
-  const { type, title, description, linkText } = props
+  const { type, title, description, linkText, href } = props
 
   const [height, setHeight] = useState<0 | 'auto'>(0)
 
@@ -42,20 +33,12 @@ export const CardSmall = (props: TProps) => {
         <AnimateHeight height={height} animateOpacity>
           <div className={css.description}>{description}</div>
         </AnimateHeight>
-
-        {'onClick' in props ? (
-          <div className={css.link} onClick={props.onClick}>
+        <Link href={href}>
+          <a className={css.link}>
             <IconArrow height={12} />
             &nbsp;{linkText}
-          </div>
-        ) : (
-          <Link href={props.linkHref}>
-            <a className={css.link}>
-              <IconArrow height={12} />
-              &nbsp;{linkText}
-            </a>
-          </Link>
-        )}
+          </a>
+        </Link>
       </div>
     </div>
   )
