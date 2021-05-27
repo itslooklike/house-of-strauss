@@ -5,20 +5,29 @@ import { IconCross } from '~/icons'
 import { ClientOnlyPortal } from './ClientOnlyPortal'
 import css from './Modal.module.scss'
 
-const globalClass = 'modal-is-open'
-
 type TProps = {
   onClose: VoidFunction
+}
+
+function getScrollbarWidth() {
+  return window.innerWidth - document.documentElement.clientWidth
 }
 
 export const Modal: React.FC<TProps> = ({ children, onClose }) => {
   const router = useRouter()
 
   useEffect(() => {
-    document.querySelector('html')?.classList.add(globalClass)
+    const node = document.querySelector('html')
+    if (node) {
+      node.style.paddingRight = `${getScrollbarWidth()}px`
+      node.style.overflow = `hidden`
+    }
 
     return () => {
-      document.querySelector('html')?.classList.remove(globalClass)
+      if (node) {
+        node.style.paddingRight = ``
+        node.style.overflow = ``
+      }
     }
   }, [])
 
