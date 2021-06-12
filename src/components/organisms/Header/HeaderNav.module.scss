@@ -37,6 +37,7 @@
 }
 
 .innerMenuListItem {
+  position: relative;
   display: block;
   padding: 10px 35px;
   color: var(--bordeaux);
@@ -46,8 +47,13 @@
   text-decoration: none;
   transition: all 0.3s;
 
-  &:hover {
-    color: var(--superlight-creme);
+  &:hover::before {
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    left: 0;
+    width: 3px;
     background-color: var(--bordeaux);
+    content: '';
   }
 }

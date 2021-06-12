@@ -19,3 +19,9 @@ docker run --init --rm -itp 3000:3000 house
 yarn     # install deps
 yarn dev # -> app:       http://localhost:3000/
 ```
+
+## ENV
+
+```
+NEXT_PUBLIC_GOOGLE_MAP_API_KEY=<google-map-api-key>
+```

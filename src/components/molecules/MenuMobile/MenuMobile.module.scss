@@ -1,4 +1,7 @@
 .root {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   height: 100%;
   padding: 10px 20px 30px;
   color: var(--bordeaux);
@@ -8,7 +11,7 @@
 .header {
   display: flex;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 70px;
 }
 
 .logoWrap {
@@ -73,6 +76,10 @@
 }
 
 .socialsWrap {
+  margin-top: auto;
+}
+
+.socials {
   display: flex;
   justify-content: center;
   margin-top: 30px;

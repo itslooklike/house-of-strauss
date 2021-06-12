@@ -7,7 +7,7 @@ export const PopupMaster = () => (
   <div className={css.root}>
     <div className={css.logo} />
     <p className={css.text}>
-      The European Music Institute Vienna is organising the Musical Masterclasses. Please visiti
+      The European Music Institute Vienna is organising the Music Master Courses. Please visiti
       their website to learn more.
     </p>
     <div className={css.buttonWrap}>

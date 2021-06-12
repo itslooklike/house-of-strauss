@@ -38,7 +38,7 @@ export const Hero = () => {
             <HeroTextSlot
               onMouseEnter={handleHover3}
               logo="Restaurant"
-              text="A musical evening in Vienna"
+              text="Soul food with a musical touch"
               link="Coming soon"
               route={allRoutes.brasserie}
             />

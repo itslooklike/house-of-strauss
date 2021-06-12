@@ -33,7 +33,7 @@ export const Home = () => {
         <HeroMobile
           type="var3"
           logo="Restaurant"
-          text="A musical evening in Vienna"
+          text="Soul food with a musical touch"
           link="Coming soon"
           route={allRoutes.brasserie}
         />
@@ -50,7 +50,7 @@ export const Home = () => {
           />
           <CardSmall
             type="music"
-            title="Musical Masterclasses"
+            title="Music Master Courses"
             linkText="More"
             description="Young musicians from all over the world work here with internationally recognised masters to improve their skills."
             route={allRoutes.masterclasses}

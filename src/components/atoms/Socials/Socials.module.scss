@@ -1,12 +1,14 @@
 .root {
   display: inline-flex;
   align-items: center;
-
-  > *:not(:last-child) {
-    margin-right: 10px;
-  }
 }
 
 .link {
+  padding: 5px;
   color: inherit;
+  transition: 0.5s;
+
+  &:hover {
+    opacity: 0.7;
+  }
 }

@@ -12,7 +12,7 @@ export const allRoutes: { [_: string]: TRoute } = {
 
   brasserie: { title: 'Brasserie', url: `?${popupParam}=casino`, withPopup: true },
   research: { title: 'Research', url: `?${popupParam}=research`, withPopup: true },
-  masterclasses: { title: 'Masterclasses', url: `?${popupParam}=master`, withPopup: true },
+  masterclasses: { title: 'Master Courses', url: `?${popupParam}=master`, withPopup: true },
   tickets: { title: 'Tickets', url: '/tickets' },
   museum: { title: 'Museum', url: '/museum' },
   concerts: { title: 'Concerts', url: '/concerts' },
@@ -46,8 +46,8 @@ export const menu = [
 ]
 
 export const socials = {
-  facebook: '#',
-  instagram: '#',
+  facebook: 'https://www.facebook.com/houseofstraussvienna',
+  instagram: 'https://www.instagram.com/houseofstrauss_vienna',
   youTube: '#',
 }
 
@@ -65,4 +65,4 @@ export const partners = {
   },
 }
 
-export const gaKey = ''
+export const gaKey = process.env.NEXT_PUBLIC_GOOGLE_MAP_API_KEY

@@ -7,7 +7,7 @@ export const DropDown = (props: TProps) => {
   const { content, children } = props
 
   return (
-    <Tippy interactive theme="museum" content={content}>
+    <Tippy interactive theme="museum" content={content} offset={[0, 17]}>
       {children}
     </Tippy>
   )

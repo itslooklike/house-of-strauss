@@ -5,7 +5,7 @@ import { portalId } from '~/utils/config'
 export default class MyDocument extends Document {
   render() {
     return (
-      <Html>
+      <Html lang="en">
         <Head />
         <body>
           <Main />

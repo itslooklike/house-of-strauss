@@ -13,4 +13,13 @@
   position: absolute;
   bottom: 75px;
   left: 60px;
+
+  @include mediaMaxMd {
+    bottom: 30px;
+    left: 5px;
+  }
+}
+
+.btnText {
+  font-weight: bold;
 }

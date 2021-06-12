@@ -12,11 +12,11 @@ export const Socials = ({ size = 14 }: TProps) => (
     <a className={css.link} href={socials.facebook} target="_blank" rel="noreferrer">
       <IconFacebook width={size} />
     </a>
-    <a className={css.link} href={socials.instagram} target="_blank" rel="noreferrer">
-      <IconInstagram width={size} />
-    </a>
     <a className={css.link} href={socials.youTube} target="_blank" rel="noreferrer">
       <IconYouTube width={size} />
+    </a>
+    <a className={css.link} href={socials.instagram} target="_blank" rel="noreferrer">
+      <IconInstagram width={size} />
     </a>
   </div>
 )

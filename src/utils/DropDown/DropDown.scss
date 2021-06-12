@@ -6,6 +6,21 @@
 
   & .tippy-arrow {
     z-index: 1;
-    color: var(--bordeaux);
+
+    // Arrow dirty hack
+    // Will need to be replaced if more flexibility is needed
+    // https://atomiks.github.io/tippyjs/v6/themes/#svg-arrow-1
+    &::before {
+      top: -6px;
+      left: 0;
+      width: 10px;
+      height: 10px;
+      background-color: var(--superlight-creme);
+      border: 0;
+      border-top: 1px solid var(--bordeaux);
+      border-left: 1px solid var(--bordeaux);
+      transform: rotate(45deg);
+      transform-origin: center bottom;
+    }
   }
 }

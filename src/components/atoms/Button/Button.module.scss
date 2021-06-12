@@ -1,7 +1,14 @@
 .root {
   display: flex;
-  padding: 14px 10px;
+  align-items: center;
+  padding: 14px 20px;
   color: var(--superlight-creme);
   background-color: var(--red);
   border: 0;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    opacity: 0.8;
+  }
 }
