@@ -10,7 +10,7 @@ export type TRoute = {
 export const allRoutes: { [_: string]: TRoute } = {
   directions: { title: 'Directions', url: '/#' },
 
-  brasserie: { title: 'Brasserie', url: `?${popupParam}=casino`, withPopup: true },
+  brasserie: { title: 'Brasserie', url: `/restaurant` },
   research: { title: 'Research', url: `?${popupParam}=research`, withPopup: true },
   masterclasses: { title: 'Master Courses', url: `?${popupParam}=master`, withPopup: true },
   tickets: { title: 'Tickets', url: '/tickets' },
