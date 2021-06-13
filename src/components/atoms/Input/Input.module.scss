@@ -7,8 +7,8 @@
 
   &.mobileLight {
     @include mediaMaxMd {
-      color: var(--superlight-creme);
-      border-color: var(--superlight-creme);
+      color: var(--super-light-creme);
+      border-color: var(--super-light-creme);
     }
   }
 }
@@ -26,7 +26,7 @@
 
     .inputWrap.mobileLight & {
       @include mediaMaxMd {
-        color: var(--superlight-creme);
+        color: var(--super-light-creme);
       }
     }
   }

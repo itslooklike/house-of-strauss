@@ -4,8 +4,9 @@
   display: flex;
   align-items: center;
   padding: 13px 20px;
-  color: var(--superlight-creme);
+  color: var(--super-light-creme);
   font-weight: bold;
+  font-size: 16px;
   background-color: var(--bordeaux);
   border: 0;
   border-radius: 0;
@@ -13,7 +14,7 @@
   &.mobileLight {
     @include mediaMaxMd {
       color: var(--blue);
-      background-color: var(--superlight-creme);
+      background-color: var(--super-light-creme);
     }
   }
 
@@ -23,12 +24,12 @@
   }
 
   &.light-purple {
-    color: var(--superlight-creme);
+    color: var(--super-light-creme);
     background-color: var(--light-purple);
   }
 
   &.salon {
-    color: var(--superlight-creme);
+    color: var(--super-light-creme);
     background-color: var(--salon);
   }
 }

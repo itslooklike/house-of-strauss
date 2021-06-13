@@ -8,7 +8,9 @@ import css from './Master.module.scss'
 export const Master = () => (
   <LWithFooter>
     <Header />
-    <PageHero theme="light-purple">Music Master Courses</PageHero>
+    <PageHero theme="light-purple" size="slim">
+      Music Master Courses
+    </PageHero>
     <PageContent>
       <h1 className={css.title}>
         "Don't only practice your art, but force your way into its secrets"

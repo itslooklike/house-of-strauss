@@ -6,7 +6,7 @@
   right: 0;
   left: 0;
   z-index: var(--zIndex-header);
-  color: var(--superlight-creme);
+  color: var(--super-light-creme);
 
   &.dark {
     color: var(--bordeaux);
@@ -14,7 +14,7 @@
 
   &.active {
     color: var(--bordeaux);
-    background-color: var(--superlight-creme);
+    background-color: var(--super-light-creme);
     border-bottom: 1px solid var(--bordeaux);
   }
 

@@ -3,8 +3,11 @@ import css from './PageHero.module.scss'
 
 type TProps = {
   theme?: 'mint' | 'light-purple'
+  size?: 'slim'
 }
 
-export const PageHero: React.FC<TProps> = ({ children, theme }) => (
-  <div className={cx(css.root, theme && css[theme])}>{children}</div>
-)
+export const PageHero: React.FC<TProps> = (props) => {
+  const { children, theme, size } = props
+
+  return <div className={cx(css.root, theme && css[theme], size && css[size])}>{children}</div>
+}

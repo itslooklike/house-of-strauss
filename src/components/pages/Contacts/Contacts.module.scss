@@ -2,11 +2,11 @@
 
 .root {
   box-sizing: content-box;
-  max-width: 1000px;
+  max-width: 1100px;
   margin-right: auto;
   margin-left: auto;
   padding-top: 190px;
-  padding-right: 35px;
+  padding-right: 25px;
   padding-left: 25px;
 
   @include mediaMaxMd {
@@ -31,17 +31,82 @@
 }
 
 .row {
+  --pad: 50px;
+
+  position: relative;
+  padding-right: var(--pad);
+  padding-left: var(--pad);
+  transition: 0.15s;
+
+  &::before,
+  &::after {
+    position: absolute;
+    right: var(--pad);
+    left: var(--pad);
+    height: 1px;
+    background-color: var(--bordeaux);
+    content: '';
+  }
+
+  &::before {
+    top: 0;
+  }
+
+  &:last-child::after {
+    bottom: 0;
+  }
+
+  &:hover::before,
+  &:hover + &::before,
+  &:hover::after {
+    height: 0;
+  }
+
+  &.type1:hover {
+    color: var(--super-light-creme);
+    background-color: var(--red);
+  }
+
+  &.type2:hover {
+    color: var(--super-light-creme);
+    background-color: var(--blue);
+  }
+
+  &.type3:hover {
+    color: var(--super-light-creme);
+    background-color: var(--bordeaux);
+  }
+
+  &.type4:hover {
+    color: var(--super-light-creme);
+    background-color: var(--salon);
+  }
+
+  &.type5:hover {
+    color: var(--super-light-creme);
+    background-color: var(--light-purple);
+  }
+
+  &.type6:hover {
+    color: var(--bordeaux);
+    background-color: var(--mint);
+  }
+
+  @include mediaMaxMd {
+    --pad: 25px;
+
+    margin-right: calc(var(--pad) * -1);
+    margin-left: calc(var(--pad) * -1);
+  }
+}
+
+.rowInner {
   display: grid;
   grid-template-columns: 240px 300px 310px;
   align-items: center;
   justify-content: space-between;
   padding-top: 20px;
   padding-bottom: 25px;
-  border-top: 1px solid var(--bordeaux);
-
-  &:last-child {
-    border-bottom: 1px solid var(--bordeaux);
-  }
 
   @include mediaMaxMd {
     grid-row-gap: 20px;

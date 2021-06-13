@@ -2,9 +2,10 @@
 
 .root {
   height: 700px;
-  padding-top: 160px;
-  color: var(--superlight-creme);
+  padding-top: 190px;
+  color: var(--super-light-creme);
   font-size: 50px;
+  font-family: var(--font-secondary);
   text-align: center;
   background-color: var(--salon);
 
@@ -14,13 +15,21 @@
     font-size: 28px;
   }
 
+  &.slim {
+    height: 440px;
+
+    @include mediaMaxMd {
+      height: 300px;
+    }
+  }
+
   &.mint {
     color: var(--bordeaux);
     background-color: var(--mint);
   }
 
   &.light-purple {
-    color: var(--superlight-creme);
+    color: var(--super-light-creme);
     background-color: var(--light-purple);
   }
 }

@@ -8,7 +8,9 @@ import css from './Research.module.scss'
 export const Research = () => (
   <LWithFooter>
     <Header type="dark" />
-    <PageHero theme="mint">Research</PageHero>
+    <PageHero theme="mint" size="slim">
+      Research
+    </PageHero>
     <PageContent>
       <h1 className={css.title}>
         Wiener Institut für
