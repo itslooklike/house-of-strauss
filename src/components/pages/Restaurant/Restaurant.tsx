@@ -1,6 +1,8 @@
-import { Sponsors, PageContent, PageHero } from '~/components/atoms'
+import { Sponsors, PageContent, PageHero, ButtonForm } from '~/components/atoms'
 import { Header } from '~/components/organisms'
 import { LWithFooter } from '~/components/layouts'
+import { partners } from '~/utils/config'
+import { IconArrowUpRight } from '~/icons'
 import css from './Restaurant.module.scss'
 
 export const Restaurant = () => (
@@ -8,7 +10,11 @@ export const Restaurant = () => (
     <Header />
     <PageHero>RESTAURANT</PageHero>
     <PageContent>
-      <div>Soul food with a musical touch</div>
+      <h1 className={css.title}>
+        Soul food
+        <br />
+        with a musical touch
+      </h1>
       <p>
         Die Brasserie Casino Zögernitz verbindet eklektisches Design mit Wiener Charme:
         beeindruckend ist der spürbare Spirit vergangener Zeiten ebenso wie die gegenwärtige
@@ -23,6 +29,19 @@ export const Restaurant = () => (
         begeistert mit charmantem persönlichem Service, einer raffinierten Auswahl an Speisen und
         Drinks sowie einer einzigartigen Kulisse und einem traumhaften Garten!
       </p>
+      <div className={css.footer}>
+        <div className={css.contacts}>
+          <a href={`mailto:${partners.casino.email}`}>{partners.casino.email}</a>
+          <a href={`tel:${partners.casino.tel}`}>{partners.casino.tel}</a>
+        </div>
+        <div className={css.bottomBlock}>
+          <ButtonForm href={partners.casino.site} blank theme="salon">
+            <IconArrowUpRight width="18" />
+            &nbsp;Website
+          </ButtonForm>
+          <div className={css.logo} />
+        </div>
+      </div>
     </PageContent>
     <Sponsors />
   </LWithFooter>

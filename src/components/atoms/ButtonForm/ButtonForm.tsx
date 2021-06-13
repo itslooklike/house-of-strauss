@@ -2,7 +2,7 @@ import cx from 'classnames'
 import css from './ButtonForm.module.scss'
 
 type TProps = {
-  theme?: 'mint' | 'light-purple'
+  theme?: 'mint' | 'light-purple' | 'salon'
   mobileLight?: boolean
   blank?: boolean
   href?: string
