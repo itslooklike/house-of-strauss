@@ -41,6 +41,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       {show && <Modal onClose={handleClose}>{show}</Modal>}
 
       <Head>
+        <title>House of Strauss</title>
         <link rel="manifest" href="/manifest.webmanifest" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="icon" href="/icon.svg" type="image/svg+xml" />

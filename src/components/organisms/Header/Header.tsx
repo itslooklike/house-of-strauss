@@ -68,12 +68,18 @@ export const Header = ({ type, mobileDark }: TProps) => {
           <div className={css.socialWrap}>
             <Socials />
           </div>
-          <button type="button" className={css.menuIconWrap} onClick={handleOpen}>
+          <button
+            type="button"
+            className={css.menuIconWrap}
+            onClick={handleOpen}
+            aria-label="Toggle Menu"
+          >
             <IconMenu width={24} />
           </button>
           <div className={css.logoWrap}>
             <Link href="/">
               <a>
+                House of Strauss Logo
                 <Logo />
               </a>
             </Link>
