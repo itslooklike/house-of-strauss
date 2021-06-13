@@ -1,25 +1,62 @@
 @import '~/utils/mixins.scss';
 
-.content {
-  display: flex;
-  flex-wrap: wrap;
+.root {
+  box-sizing: content-box;
+  max-width: 1000px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 190px;
+  padding-right: 35px;
+  padding-left: 25px;
+}
+
+.title {
+  margin-bottom: 55px;
+  font-size: 80px;
+  font-family: var(--font-secondary);
+  text-align: center;
+}
+
+.table {
+  margin-bottom: 90px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 240px 300px 310px;
+  align-items: center;
   justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 25px;
+  border-top: 1px solid var(--bordeaux);
+
+  &:last-child {
+    border-bottom: 1px solid var(--bordeaux);
+  }
+}
+
+.colTitle {
+  font-size: 32px;
+  font-family: var(--font-secondary);
 }
 
 .text {
-  margin: 0;
   font-size: 18px;
-  line-height: 24px;
 }
 
-.col1 {
-  max-width: 370px;
-  padding-top: 50px;
-  padding-bottom: 40px;
+.name {
+  margin-top: 2px;
+  font-weight: 600;
+  font-size: 22px;
 }
 
-.mapWrap {
-  width: 100%;
-  max-width: 800px;
-  height: 350px;
+.colContacts {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.web {
+  margin-top: 2px;
 }

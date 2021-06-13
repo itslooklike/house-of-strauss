@@ -67,3 +67,48 @@ export const partners = {
 }
 
 export const gaKey = process.env.NEXT_PUBLIC_GOOGLE_MAP_API_KEY
+
+export const contacts = [
+  {
+    title: 'Concerts & Events',
+    text: 'House of Strauss',
+    name: 'Hermann Rauter',
+    email: 'concerts@houseofstrauss.at',
+    web: 'https://www.houseofstrauss.at/concerts',
+  },
+  {
+    title: 'Exhibition & Shop',
+    text: 'House of Strauss',
+    name: 'Hermann Rauter',
+    email: 'exhibition@houseofstrauss.at',
+    web: 'https://www.houseofstrauss.at/exhibition',
+  },
+  {
+    title: 'Ballroom Rental',
+    text: 'Mind-Set GmbH',
+    name: 'Elisabeth Hanser',
+    email: 'ballroom@houseofstrauss.at',
+    web: 'https://www.houseofstrauss.at/ballroom',
+  },
+  {
+    title: 'Bistro & Brasserie',
+    text: 'Marco Simonis - Urban Appetite',
+    name: '+43 11 22 34 56',
+    email: 'welcome@marcosimonis.com',
+    web: 'https://www.marcosimonis.com',
+  },
+  {
+    title: 'Musical Masterclasses',
+    text: 'European Music Institute Vienna',
+    name: 'Jörg Birhance',
+    email: 'Info@european-music-institute.com',
+    web: 'https://www.emi-vienna.com',
+  },
+  {
+    title: 'Strauss Research',
+    text: 'Institute for Strauss Research Vienna',
+    name: 'Prof. Norbert Rubey',
+    email: 'office@johann-strauss.at',
+    web: 'https://www.johann-strauss.at',
+  },
+]
