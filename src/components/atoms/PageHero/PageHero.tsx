@@ -1,3 +1,10 @@
+import cx from 'classnames'
 import css from './PageHero.module.scss'
 
-export const PageHero: React.FC = ({ children }) => <div className={css.root}>{children}</div>
+type TProps = {
+  theme?: 'mint'
+}
+
+export const PageHero: React.FC<TProps> = ({ children, theme }) => (
+  <div className={cx(css.root, theme && css[theme])}>{children}</div>
+)
