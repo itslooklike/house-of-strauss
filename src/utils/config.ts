@@ -12,7 +12,8 @@ export const allRoutes: { [_: string]: TRoute } = {
 
   brasserie: { title: 'Brasserie', url: `/restaurant` },
   research: { title: 'Research', url: `/research` },
-  masterclasses: { title: 'Master Courses', url: `?${popupParam}=master`, withPopup: true },
+  // masterclasses: { title: 'Master Courses', url: `?${popupParam}=master`, withPopup: true },
+  masterclasses: { title: 'Master Courses', url: `/master` },
   tickets: { title: 'Tickets', url: '/tickets' },
   museum: { title: 'Museum', url: '/museum' },
   concerts: { title: 'Concerts', url: '/concerts' },

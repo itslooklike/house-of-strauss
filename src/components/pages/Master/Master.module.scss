@@ -1,0 +1,33 @@
+@import '~/utils/mixins.scss';
+
+.title {
+  margin: 0 0 35px;
+  font-size: 40px;
+}
+
+.footer {
+  margin-top: 30px;
+}
+
+.contacts {
+  display: grid;
+  gap: 10px;
+  font-weight: bold;
+}
+
+.bottomBlock {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 129px;
+  height: 62px;
+  background: url('/images/image-logo-emiv.jpg') 0 0 / cover no-repeat;
+
+  @include mediaMaxMd {
+    width: 85px;
+    height: 41px;
+  }
+}
