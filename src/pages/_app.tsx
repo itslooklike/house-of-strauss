@@ -42,6 +42,10 @@ function MyApp({ Component, pageProps }: AppProps) {
 
       <Head>
         <title>House of Strauss</title>
+        <meta
+          name="description"
+          content="House of Strauss offers a unique musical and culinary experience in Vienna, the Capital of Music"
+        />
         <link rel="manifest" href="/manifest.webmanifest" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="icon" href="/icon.svg" type="image/svg+xml" />

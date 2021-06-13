@@ -79,7 +79,7 @@ export const Header = ({ type, mobileDark }: TProps) => {
           <div className={css.logoWrap}>
             <Link href="/">
               <a>
-                House of Strauss Logo
+                <span className="visually-hidden">Home</span>
                 <Logo />
               </a>
             </Link>
