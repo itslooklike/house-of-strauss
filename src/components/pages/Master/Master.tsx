@@ -43,7 +43,7 @@ export const Master = () => (
       </p>
       <div className={css.footer}>
         <div className={css.bottomBlock}>
-          <ButtonForm href={partners.research.site} blank theme="light-purple">
+          <ButtonForm href={partners.masterclass.site} blank theme="light-purple">
             <IconArrowUpRight width="18" />
             &nbsp;Website
           </ButtonForm>
