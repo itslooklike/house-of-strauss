@@ -16,31 +16,6 @@
   }
 }
 
-.mainWrap {
-  margin-right: 15px;
-  margin-left: 15px;
-}
-
-.main {
-  max-width: 900px;
-  margin: -120px auto 0;
-  padding: 60px 36px 100px;
-  background-color: var(--superlight-creme);
-
-  @include mediaMaxMd {
-    max-width: 600px;
-    padding-top: 20px;
-    padding-right: 20px;
-    padding-left: 20px;
-  }
-}
-
-.mainBlock {
-  max-width: 600px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
 .title {
   margin: 0 0 30px;
   font-size: 40px;

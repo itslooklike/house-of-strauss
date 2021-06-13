@@ -1,23 +1,32 @@
 @import '~/utils/mixins.scss';
 
 .root {
+  --pad: 120px;
+
   position: relative;
-  margin-right: 15px;
-  margin-left: 15px;
+  z-index: 1;
 
   &::before {
     position: absolute;
-    bottom: calc(100% - 1px);
+    bottom: calc(100% - var(--pad) - 1px);
+    z-index: -1;
     width: 100%;
-    height: 11px;
-    background: url('/images/row-hills.svg') -20px 0 / 1473px 11px repeat-x;
+    height: 17px;
+    background: url('/images/content-wave.svg') -33px 0 / 1622px 17px repeat-x;
     content: '';
   }
 }
 
+.rootInner {
+  position: relative;
+  z-index: 2;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
 .content {
   max-width: 900px;
-  margin: -120px auto 0;
+  margin: calc(var(--pad) * -1) auto 0;
   padding: 60px 36px 100px;
   background-color: var(--superlight-creme);
 
@@ -27,4 +36,10 @@
     padding-right: 20px;
     padding-left: 20px;
   }
+}
+
+.contentInner {
+  max-width: 600px;
+  margin-right: auto;
+  margin-left: auto;
 }
