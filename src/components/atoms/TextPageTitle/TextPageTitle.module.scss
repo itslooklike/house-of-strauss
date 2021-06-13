@@ -3,4 +3,8 @@
   font-size: 40px;
   font-family: var(--font-secondary);
   line-height: 48px;
+
+  &.center {
+    text-align: center;
+  }
 }

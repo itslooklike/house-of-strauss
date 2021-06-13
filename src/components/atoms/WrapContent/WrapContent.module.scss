@@ -1,6 +1,12 @@
+@import '~/utils/mixins.scss';
+
 .root {
   max-width: 1300px;
   margin-right: auto;
   margin-left: auto;
-  padding: 140px 36px 100px;
+  padding: 200px 36px 130px;
+
+  @include mediaMaxMd {
+    padding: 100px 15px 70px;
+  }
 }

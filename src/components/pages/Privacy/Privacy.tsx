@@ -1,4 +1,4 @@
-import { WrapContent, TextPageTitle } from '~/components/atoms'
+import { WrapContent, TextPageTitle, Sponsors } from '~/components/atoms'
 import { Header } from '~/components/organisms'
 import { LWithFooter } from '~/components/layouts'
 import css from './Privacy.module.scss'
@@ -8,7 +8,7 @@ export const Privacy = () => (
     <Header type="dark" />
     <WrapContent>
       <div className={css.content}>
-        <TextPageTitle>Privacy Policy</TextPageTitle>
+        <TextPageTitle align="center">Privacy Policy</TextPageTitle>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
           ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
@@ -27,5 +27,6 @@ export const Privacy = () => (
         </p>
       </div>
     </WrapContent>
+    <Sponsors />
   </LWithFooter>
 )

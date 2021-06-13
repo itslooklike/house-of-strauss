@@ -1,0 +1,50 @@
+@import '~/utils/mixins.scss';
+
+.root {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 60px 15px;
+
+  @include mediaMaxMd {
+    flex-direction: column;
+  }
+}
+
+.title {
+  max-width: 170px;
+  font-size: 16px;
+
+  @include mediaMaxMd {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}
+
+.container {
+  margin-left: auto;
+
+  @include mediaMaxMd {
+    margin-left: unset;
+  }
+}
+
+.inner {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -20px;
+
+  @include mediaMaxMd {
+    flex-direction: column;
+  }
+}
+
+.sponsorImage {
+  width: 187px;
+  height: 72px;
+  margin: 20px;
+  outline: 1px solid grey;
+}

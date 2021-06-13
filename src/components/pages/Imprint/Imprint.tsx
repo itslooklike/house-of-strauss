@@ -1,4 +1,4 @@
-import { WrapContent, TextPageTitle } from '~/components/atoms'
+import { WrapContent, TextPageTitle, Sponsors } from '~/components/atoms'
 import { Header } from '~/components/organisms'
 import { LWithFooter } from '~/components/layouts'
 import css from './Imprint.module.scss'
@@ -8,7 +8,7 @@ export const Imprint = () => (
     <Header type="dark" />
     <WrapContent>
       <div className={css.content}>
-        <TextPageTitle>Imprint</TextPageTitle>
+        <TextPageTitle align="center">Imprint</TextPageTitle>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
           ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
@@ -27,5 +27,6 @@ export const Imprint = () => (
         </p>
       </div>
     </WrapContent>
+    <Sponsors />
   </LWithFooter>
 )
