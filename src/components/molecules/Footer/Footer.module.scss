@@ -1,8 +1,18 @@
 @import '~/utils/mixins.scss';
 
 .root {
+  position: relative;
   color: var(--superlight-creme);
   background-color: var(--red);
+
+  &::before {
+    position: absolute;
+    bottom: calc(100% - 1px);
+    width: 100%;
+    height: 11px;
+    background: url('/images/footer-wave.svg') -20px 0 / 1473px 11px repeat-x;
+    content: '';
+  }
 }
 
 .inner {
