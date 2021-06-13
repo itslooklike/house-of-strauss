@@ -2,11 +2,23 @@
 
 .hero {
   height: 700px;
+  padding-top: 160px;
+  color: var(--superlight-creme);
+  font-size: 60px;
+  font-family: var(--font-secondary);
+  text-align: center;
   background: url('/images/image-museum-page.jpg') center / cover no-repeat;
 
   @include mediaMaxMd {
-    display: none;
+    height: 570px;
+    padding-top: 90px;
+    font-size: 32px;
   }
+}
+
+.mainWrap {
+  margin-right: 15px;
+  margin-left: 15px;
 }
 
 .main {
@@ -16,53 +28,26 @@
   background-color: var(--superlight-creme);
 
   @include mediaMaxMd {
-    margin-top: 0;
-    padding-top: 100px;
+    max-width: 600px;
+    padding-top: 20px;
     padding-right: 20px;
     padding-left: 20px;
   }
 }
 
+.mainBlock {
+  max-width: 600px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .title {
   margin: 0 0 30px;
   font-size: 40px;
-  line-height: 48px;
+  font-family: var(--font-secondary);
 
   @include mediaMaxMd {
-    margin-bottom: 0;
-    padding-bottom: 340px;
-    color: var(--blue);
-    font-size: 26px;
-    line-height: 31px;
-    text-align: center;
-    background: url('/images/image-museum-page-mobile.png') bottom center / 345px 392px no-repeat;
-  }
-}
-
-.content {
-  @include mediaMaxMd {
-    position: relative;
-    color: var(--superlight-creme);
-    background-color: var(--blue);
-
-    &::before {
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: 0;
-      width: 100%;
-      height: 330px;
-      background: url('/images/image-museum-page-mobile-text-bg.jpg') top / cover no-repeat;
-      content: '';
-    }
-  }
-}
-
-.contentInner {
-  @include mediaMaxMd {
-    position: relative;
-    z-index: 1;
-    padding: 150px 40px 30px;
+    font-size: 24px;
   }
 }
 

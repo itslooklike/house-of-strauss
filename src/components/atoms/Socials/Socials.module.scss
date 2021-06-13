@@ -6,7 +6,7 @@
 .link {
   padding: 5px;
   color: inherit;
-  transition: 0.5s;
+  transition: opacity 0.5s;
 
   &:hover {
     opacity: 0.7;
