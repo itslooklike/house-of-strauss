@@ -1,4 +1,3 @@
-export { Button } from './Button'
 export { ButtonForm } from './ButtonForm'
 export { ButtonGhost } from './ButtonGhost'
 export { CardLarge } from './CardLarge'

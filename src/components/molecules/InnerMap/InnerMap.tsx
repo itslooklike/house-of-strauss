@@ -1,15 +1,15 @@
 import { IconArrow } from '~/icons'
-import { Button, Map } from '~/components/atoms'
+import { ButtonForm, Map } from '~/components/atoms'
 import css from './InnerMap.module.scss'
 
 export const InnerMap = () => (
   <div className={css.root}>
     <Map />
     <div className={css.btnWrap}>
-      <Button>
+      <ButtonForm>
         <IconArrow width="14" />
-        &nbsp;<span className={css.btnText}>Directions</span>
-      </Button>
+        &nbsp;Directions
+      </ButtonForm>
     </div>
   </div>
 )
