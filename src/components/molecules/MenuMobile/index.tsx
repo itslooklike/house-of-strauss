@@ -1,1 +1,1 @@
-export { MenuMobile } from './MenuMobile'
+export { MenuMobile, MenuMobileInModal } from './MenuMobile'

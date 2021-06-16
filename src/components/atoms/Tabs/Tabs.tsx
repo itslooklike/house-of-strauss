@@ -22,6 +22,7 @@ export const Tabs = (props: TProps) => {
       <div className={css.tabsTitles}>
         {tabs.map((tab, index) => (
           <div
+            key={index}
             className={cx(
               css.tabTitle,
               index === active && css.active,

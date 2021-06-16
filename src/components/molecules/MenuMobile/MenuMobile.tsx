@@ -4,6 +4,7 @@ import { LinkPopup } from '~/utils/LinkPopup'
 import { Socials, Logo, Region } from '~/components/atoms'
 import { IconCross } from '~/icons'
 import { menu, allRoutes } from '~/utils/config'
+import { ModalWrap } from '~/utils/ModalWrap'
 import css from './MenuMobile.module.scss'
 
 type TProps = {
@@ -66,4 +67,10 @@ export const MenuMobile = ({ onClick }: TProps) => (
       </div>
     </div>
   </div>
+)
+
+export const MenuMobileInModal = ({ onClick }: TProps) => (
+  <ModalWrap>
+    <MenuMobile onClick={onClick} />
+  </ModalWrap>
 )

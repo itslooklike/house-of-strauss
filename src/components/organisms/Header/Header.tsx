@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
 import cx from 'classnames'
 import { Socials, Logo, Region } from '~/components/atoms'
-import { MenuMobile } from '~/components/molecules'
+import { MenuMobileInModal } from '~/components/molecules'
 import { IconMenu } from '~/icons'
 import { HeaderNav } from './HeaderNav'
 import css from './Header.module.scss'
@@ -62,7 +62,7 @@ export const Header = ({ type, mobileDark }: TProps) => {
         <div className={css.inner}>
           {show && (
             <div className={css.mobileMenu}>
-              <MenuMobile onClick={handleClose} />
+              <MenuMobileInModal onClick={handleClose} />
             </div>
           )}
           <div className={css.socialWrap}>
