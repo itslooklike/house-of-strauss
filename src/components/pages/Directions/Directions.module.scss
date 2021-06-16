@@ -4,10 +4,11 @@
   max-width: 1200px;
   margin-right: auto;
   margin-left: auto;
-  padding-top: 190px;
-  padding-right: 30px;
-  padding-bottom: 50px;
-  padding-left: 30px;
+  padding: 190px 30px 50px;
+
+  @include mediaMaxMd {
+    padding-top: 115px;
+  }
 }
 
 .title {
@@ -15,6 +16,10 @@
   font-size: 60px;
   font-family: var(--font-secondary);
   text-align: center;
+
+  @include mediaMaxMd {
+    font-size: 32px;
+  }
 }
 
 .content {
@@ -26,6 +31,7 @@
   @include mediaMaxMd {
     grid-template-rows: auto 220px;
     grid-template-columns: 1fr;
+    font-size: 16px;
   }
 }
 
@@ -33,6 +39,10 @@
   margin: 0 0 20px;
   font-size: 40px;
   font-family: var(--font-secondary);
+
+  @include mediaMaxMd {
+    font-size: 24px;
+  }
 }
 
 .contactAddress {
