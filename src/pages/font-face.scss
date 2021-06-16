@@ -1,5 +1,7 @@
-/* https://developer.mozilla.org/ru/docs/Web/CSS/font-weight */
+// https://developer.mozilla.org/ru/docs/Web/CSS/font-weight
+// https://transfonter.org
 
+// BR Hendrix
 @font-face {
   font-weight: 300;
   font-family: 'BR Hendrix';
@@ -37,5 +39,47 @@
   font-family: 'BR Hendrix';
   font-style: normal;
   src: url('/fonts/br-hendrix-bold-webfont.woff2') format('woff2');
+  font-display: swap;
+}
+
+// Begum Sans
+
+@font-face {
+  font-weight: 300;
+  font-family: 'Begum Sans';
+  font-style: normal;
+  src: url('/fonts/BegumSans-Light.woff2') format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-weight: 500;
+  font-family: 'Begum Sans';
+  font-style: normal;
+  src: url('/fonts/BegumSans-Medium.woff2') format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-weight: normal;
+  font-family: 'Begum Sans';
+  font-style: normal;
+  src: url('/fonts/BegumSans-Regular.woff2') format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-weight: 600;
+  font-family: 'Begum Sans';
+  font-style: normal;
+  src: url('/fonts/BegumSans-SemiBold.woff2') format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-weight: bold;
+  font-family: 'Begum Sans';
+  font-style: normal;
+  src: url('/fonts/BegumSans-Bold.woff2') format('woff2');
   font-display: swap;
 }
