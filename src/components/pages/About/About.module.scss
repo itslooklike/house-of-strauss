@@ -1,12 +1,36 @@
-.content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+@import '~/utils/mixins.scss';
+
+.title {
+  margin: 0 0 30px;
+  font-size: 60px;
+  font-family: var(--font-secondary);
+  text-align: center;
+
+  @include mediaMaxMd {
+    font-size: 32px;
+  }
 }
 
-.col1 {
-  max-width: 320px;
-  padding-top: 50px;
+.content {
+  max-width: 600px;
+  margin-right: auto;
+  margin-bottom: 10px;
+  margin-left: auto;
+}
+
+.text {
+  margin: 0 0 50px;
   font-size: 22px;
-  line-height: 30px;
+}
+
+.projectTitle {
+  margin: 0;
+  font-size: 40px;
+  font-family: var(--font-secondary);
+}
+
+.aboutWrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
