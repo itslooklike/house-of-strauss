@@ -24,6 +24,7 @@ export const allRoutes: { [_: string]: TRoute } = {
   imprint: { title: 'Imprint', url: '/imprint' },
   privacy: { title: 'Privacy Policy', url: '/privacy' },
   news: { title: 'News', url: '/news' },
+  ballroom: { title: 'Ballroom Rental', url: '/ballroom' },
 }
 
 export const menu = [
@@ -36,7 +37,9 @@ export const menu = [
     allRoutes.directions,
   ],
   [
+    allRoutes.news,
     allRoutes.events,
+    allRoutes.ballroom,
     allRoutes.research,
     allRoutes.masterclasses,
     allRoutes.history,

@@ -48,6 +48,7 @@
 .list {
   display: grid;
   gap: 10px;
+  align-content: flex-start;
   margin: 0;
   padding: 0;
   list-style: none;
