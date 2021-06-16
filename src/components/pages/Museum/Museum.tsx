@@ -8,10 +8,7 @@ export const Museum = () => (
   <LWithFooter>
     <Header />
     <div className={css.hero}>Exhibition</div>
-    <PageContent>
-      <h1 className={css.title}>
-        The King of Waltz, Johann Strauss II, was arguably the world‘s first pop star
-      </h1>
+    <PageContent title="The King of Waltz, Johann Strauss II, was arguably the world‘s first pop star">
       <div className={css.content}>
         <p>Dive into the story of the Strauss dynasty while their legacy comes alive around you.</p>
         <p className={css.text}>The museum will open in June 2022. More info will follow soon.</p>

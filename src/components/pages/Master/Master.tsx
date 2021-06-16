@@ -11,10 +11,7 @@ export const Master = () => (
     <PageHero theme="light-purple" size="slim">
       Music Master Courses
     </PageHero>
-    <PageContent>
-      <h1 className={css.title}>
-        "Don't only practice your art, but force your way into its secrets"
-      </h1>
+    <PageContent title={"Don't only practice your art, but force your way into its secrets"}>
       <p>Ludwig van Beethoven</p>
       <p>
         As one of the world's leading summer academies, European Music Institute Vienna, founded in

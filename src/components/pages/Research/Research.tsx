@@ -11,12 +11,15 @@ export const Research = () => (
     <PageHero theme="mint" size="slim">
       Research
     </PageHero>
-    <PageContent>
-      <h1 className={css.title}>
-        Wiener Institut für
-        <br />
-        Strauss-Forschung
-      </h1>
+    <PageContent
+      title={
+        <>
+          Wiener Institut für
+          <br />
+          Strauss-Forschung
+        </>
+      }
+    >
       <p>
         Das Wiener Institut für Strauss-Forschung (kurz: WISF) ist ein Trägerverein für
         wissenschaftliche Forschungsprojekte rund um die Wiener Musikerfamilie Strauss und ihre

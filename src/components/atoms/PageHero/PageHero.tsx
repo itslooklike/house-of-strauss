@@ -9,5 +9,5 @@ type TProps = {
 export const PageHero: React.FC<TProps> = (props) => {
   const { children, theme, size } = props
 
-  return <div className={cx(css.root, theme && css[theme], size && css[size])}>{children}</div>
+  return <h1 className={cx(css.root, theme && css[theme], size && css[size])}>{children}</h1>
 }

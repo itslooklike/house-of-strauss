@@ -35,7 +35,7 @@ export const Ballroom = () => (
         alt="ballroom 1"
       />
       <div className={css.content}>
-        <h1 className={css.title}>Your event in the historic ballroom</h1>
+        <h2 className={css.title}>Your event in the historic ballroom</h2>
         <Tabs tabs={tabs} />
       </div>
     </PageContent>

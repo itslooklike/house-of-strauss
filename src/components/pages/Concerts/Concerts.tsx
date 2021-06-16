@@ -32,8 +32,7 @@ export const Concerts = () => (
         alt="concerts-logo"
       />
     </PageHero>
-    <PageContent>
-      <h1 className={css.title}>Enjoy concerts in the historic ballroom</h1>
+    <PageContent title="Enjoy concerts in the historic ballroom">
       <Tabs tabs={tabs} defaultActive={1} />
     </PageContent>
     <Sponsors />

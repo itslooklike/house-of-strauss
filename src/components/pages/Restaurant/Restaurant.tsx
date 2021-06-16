@@ -9,12 +9,15 @@ export const Restaurant = () => (
   <LWithFooter>
     <Header />
     <PageHero>RESTAURANT</PageHero>
-    <PageContent>
-      <h1 className={css.title}>
-        Soul food
-        <br />
-        with a musical touch
-      </h1>
+    <PageContent
+      title={
+        <>
+          Soul food
+          <br />
+          with a musical touch
+        </>
+      }
+    >
       <p>
         Die Brasserie Casino Zögernitz verbindet eklektisches Design mit Wiener Charme:
         beeindruckend ist der spürbare Spirit vergangener Zeiten ebenso wie die gegenwärtige
