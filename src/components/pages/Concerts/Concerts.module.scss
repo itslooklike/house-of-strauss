@@ -1,27 +1,12 @@
-.hero {
-  height: 700px;
-  background-image: linear-gradient(180deg, #590c28 0%, rgba(89, 12, 40, 0) 100%),
-    url('/images/image-orchester.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
+@import '~/utils/mixins.scss';
 
-.inner {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  max-width: 1440px;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 0 36px 170px;
-}
+.logo {
+  position: relative;
+  top: -100px;
 
-.content {
-  max-width: 640px;
-  margin-top: -130px;
-  padding: 40px 45px 75px;
-  background-color: var(--super-light-creme);
+  @include mediaMaxMd {
+    position: static;
+  }
 }
 
 .title {
@@ -30,20 +15,6 @@
   line-height: 48px;
 }
 
-.subtitle {
-  margin: 0;
-  font-size: 22px;
-  line-height: 30px;
-}
-
-.rightSlot {
-  margin-top: 35px;
-  margin-left: auto;
-}
-
-.pageTitle {
-  width: 182px;
-  height: 102px;
-  font-size: 0;
-  background: url('/images/image-concerts-page-logo.svg') center / cover no-repeat;
+.text {
+  margin: 0 0 25px;
 }

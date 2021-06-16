@@ -1,26 +1,41 @@
+import { Sponsors, PageContent, PageHero, Tabs } from '~/components/atoms'
+import { FormDefault } from '~/components/molecules'
 import { Header } from '~/components/organisms'
 import { LWithFooter } from '~/components/layouts'
 import css from './Concerts.module.scss'
 
+const tabs = [
+  { title: 'Calendar', content: <>Hello1</>, disabled: true },
+  {
+    title: 'Info',
+    content: (
+      <div>
+        <p className={css.text}>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+          ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+        <FormDefault title="Subscribe to our newsletter to stay up to date" />
+      </div>
+    ),
+  },
+]
+
 export const Concerts = () => (
   <LWithFooter>
     <Header />
-    <div className={css.hero} />
-    <main className={css.inner}>
-      <div className={css.content}>
-        <h1 className={css.title}>Concerts in the historic ballroom</h1>
-        <p className={css.subtitle}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-          ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-          sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-          est laborum
-        </p>
-      </div>
-      <div className={css.rightSlot}>
-        <div className={css.pageTitle}>Concerts</div>
-      </div>
-    </main>
+    <PageHero theme="concerts">
+      <img
+        className={css.logo}
+        height="195"
+        src="/images/concerts-and-events-logo.svg"
+        alt="concerts-logo"
+      />
+    </PageHero>
+    <PageContent>
+      <h1 className={css.title}>Enjoy concerts in the historic ballroom</h1>
+      <Tabs tabs={tabs} defaultActive={1} />
+    </PageContent>
+    <Sponsors />
   </LWithFooter>
 )

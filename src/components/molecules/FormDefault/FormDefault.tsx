@@ -24,7 +24,7 @@ export const FormDefault = ({ title, mobileLight }: TProps) => {
   })
 
   return (
-    <form onSubmit={formik.handleSubmit}>
+    <form onSubmit={formik.handleSubmit} className={css.root}>
       {title && <p className={css.title}>{title}</p>}
 
       <div className={css.firstInput}>

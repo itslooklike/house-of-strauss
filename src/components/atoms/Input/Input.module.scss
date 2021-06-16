@@ -23,6 +23,7 @@
 
   &::placeholder {
     color: var(--bordeaux);
+    font-weight: 300;
 
     .inputWrap.mobileLight & {
       @include mediaMaxMd {
