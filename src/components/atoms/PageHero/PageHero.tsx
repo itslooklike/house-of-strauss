@@ -2,7 +2,7 @@ import cx from 'classnames'
 import css from './PageHero.module.scss'
 
 type TProps = {
-  theme?: 'mint' | 'light-purple'
+  theme?: 'mint' | 'light-purple' | 'orange'
   size?: 'slim'
 }
 

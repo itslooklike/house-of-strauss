@@ -2,10 +2,7 @@
 
 .head {
   display: flex;
-  max-width: 1440px;
   height: 460px;
-  margin-right: auto;
-  margin-left: auto;
   color: var(--super-light-creme);
   background-color: var(--orange);
 }
@@ -16,40 +13,19 @@
   margin-top: auto;
   margin-right: auto;
   margin-left: auto;
-  padding-right: 26px;
-  padding-left: 36px;
 }
 
-.textBlock {
-  max-width: 370px;
-}
-
-.title {
-  margin: 0 0 10px;
-  font-size: 40px;
-  font-family: var(--font-secondary);
-  line-height: 48px;
-}
-
-.subtitle {
-  margin: 0;
+.text {
+  margin: 0 0 40px;
   font-size: 22px;
-  line-height: 30px;
-}
 
-.inner {
-  position: relative;
+  @include mediaMaxMd {
+    font-size: 16px;
+  }
 }
 
 .image {
-  position: absolute;
-  top: -130px;
-  right: 0;
   width: 100%;
-  max-width: 615px;
+  margin-bottom: 30px;
   object-fit: cover;
-
-  @include mediaMaxMd {
-    position: static;
-  }
 }

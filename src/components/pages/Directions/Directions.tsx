@@ -24,10 +24,7 @@ export const Directions = () => (
             <div>Contact:</div>
             <a href={`mailto:${houseEmail}`}>{houseEmail}</a>
           </div>
-          <div>
-            <p className={css.formTitle}>Newsletter</p>
-            <FormDefault />
-          </div>
+          <FormDefault title="Newsletter" />
         </div>
 
         <div className={css.mapWrap}>
