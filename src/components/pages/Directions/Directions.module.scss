@@ -1,0 +1,60 @@
+@import '~/utils/mixins.scss';
+
+.root {
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 190px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 30px;
+}
+
+.title {
+  margin: 0 0 30px;
+  font-size: 60px;
+  font-family: var(--font-secondary);
+  text-align: center;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  gap: 30px;
+  font-size: 18px;
+
+  @include mediaMaxMd {
+    grid-template-rows: auto 220px;
+    grid-template-columns: 1fr;
+  }
+}
+
+.contactTitle {
+  margin: 0 0 20px;
+  font-size: 40px;
+  font-family: var(--font-secondary);
+}
+
+.contactAddress {
+  margin: 0 0 20px;
+}
+
+.contactWrap {
+  margin: 0 0 35px;
+}
+
+.formTitle {
+  margin: 0 0 10px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.mapWrap {
+  height: 100%;
+  min-height: 520px;
+
+  @include mediaMaxMd {
+    height: unset;
+    min-height: unset;
+  }
+}

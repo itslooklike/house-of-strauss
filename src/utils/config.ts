@@ -8,8 +8,7 @@ export type TRoute = {
 }
 
 export const allRoutes: { [_: string]: TRoute } = {
-  directions: { title: 'Directions', url: '/#' },
-
+  directions: { title: 'Directions', url: '/directions' },
   brasserie: { title: 'Brasserie', url: `/restaurant` },
   research: { title: 'Research', url: `/research` },
   // masterclasses: { title: 'Master Courses', url: `?${popupParam}=master`, withPopup: true },
@@ -112,3 +111,5 @@ export const contacts = [
     web: 'https://www.johann-strauss.at',
   },
 ]
+
+export const houseEmail = 'info@houseofstrauss.at'
