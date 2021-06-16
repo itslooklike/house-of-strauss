@@ -51,10 +51,29 @@
     padding-left: 5px;
     background-color: transparent;
   }
+
+  .root.no-paddings & {
+    padding: 0;
+  }
+
+  .root.large & {
+    max-width: 1000px;
+  }
 }
 
 .contentInner {
   max-width: 600px;
   margin-right: auto;
   margin-left: auto;
+
+  .root.large & {
+    max-width: 1000px;
+  }
+
+  .root.no-paddings & {
+    max-width: none;
+    margin-right: initial;
+    margin-left: initial;
+    padding: 0;
+  }
 }

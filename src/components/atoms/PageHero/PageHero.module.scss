@@ -38,6 +38,11 @@
     background-color: var(--orange);
   }
 
+  &.bordeaux {
+    color: var(--super-light-creme);
+    background-color: var(--bordeaux);
+  }
+
   &.concerts {
     background: url('/images/concerts-bg.jpg') 0 0 / cover no-repeat;
   }
