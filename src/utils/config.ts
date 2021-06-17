@@ -37,7 +37,6 @@ export const menu = [
     allRoutes.directions,
   ],
   [
-    allRoutes.news,
     allRoutes.events,
     allRoutes.ballroom,
     allRoutes.research,
@@ -103,7 +102,7 @@ export const contacts = [
     title: 'Musical Masterclasses',
     text: 'European Music Institute Vienna',
     name: 'Jörg Birhance',
-    email: 'Info@european-music-institute.com',
+    email: 'info@european-music-institute.com',
     web: 'https://www.emi-vienna.com',
   },
   {
