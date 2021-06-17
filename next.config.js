@@ -12,6 +12,10 @@ const withSVGr = {
   },
 }
 
-const config = withPlugins([[withSVGr]])
+const config = withPlugins([[withSVGr]], {
+  images: {
+    disableStaticImages: true,
+  },
+})
 
 module.exports = config

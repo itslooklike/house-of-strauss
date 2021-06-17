@@ -5,15 +5,18 @@
   margin: 0;
   padding-top: 190px;
   color: var(--super-light-creme);
-  font-size: 50px;
+  font-weight: normal;
+  font-size: 60px;
   font-family: var(--font-secondary);
+  line-height: 71px;
   text-align: center;
   background-color: var(--salon);
 
   @include mediaMaxMd {
     height: 570px;
     padding-top: 90px;
-    font-size: 28px;
+    font-size: 32px;
+    line-height: 38px;
   }
 
   &.slim {

@@ -5,7 +5,7 @@ import './font-face.scss'
 import './globals.scss'
 import '../i18n'
 
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, ReactNode } from 'react'
 import { useRouter } from 'next/router'
 import Head from 'next/head'
 import type { AppProps } from 'next/app'
@@ -16,7 +16,7 @@ import { popupParam } from '~/utils/config'
 function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter()
 
-  const [show, setShow] = useState<any>(false)
+  const [show, setShow] = useState<false | ReactNode>(false)
   const handleClose = () => setShow(false)
 
   useEffect(() => {
