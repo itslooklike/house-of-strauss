@@ -1,4 +1,4 @@
-import { Sponsors, Map } from '~/components/atoms'
+import { Sponsors, Map, TextPageTitle } from '~/components/atoms'
 import { FormDefault } from '~/components/molecules'
 import { Header } from '~/components/organisms'
 import { LWithFooter } from '~/components/layouts'
@@ -9,7 +9,7 @@ export const Directions = () => (
   <LWithFooter>
     <Header type="dark" />
     <main className={css.root}>
-      <h1 className={css.title}>Directions</h1>
+      <TextPageTitle align="center">Directions</TextPageTitle>
       <div className={css.content}>
         <div>
           <div className={css.contactTitle}>House of Strauss</div>

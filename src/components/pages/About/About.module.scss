@@ -1,16 +1,5 @@
 @import '~/utils/mixins.scss';
 
-.title {
-  margin: 0 0 30px;
-  font-size: 60px;
-  font-family: var(--font-secondary);
-  text-align: center;
-
-  @include mediaMaxMd {
-    font-size: 32px;
-  }
-}
-
 .content {
   max-width: 600px;
   margin-right: auto;
@@ -24,7 +13,8 @@
 }
 
 .projectTitle {
-  margin: 0;
+  margin: 0 0 50px;
+  font-weight: normal;
   font-size: 40px;
   font-family: var(--font-secondary);
 }

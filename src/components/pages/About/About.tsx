@@ -1,4 +1,4 @@
-import { WrapContent, Sponsors } from '~/components/atoms'
+import { WrapContent, Sponsors, TextPageTitle } from '~/components/atoms'
 import { Header } from '~/components/organisms'
 import { LWithFooter } from '~/components/layouts'
 import css from './About.module.scss'
@@ -15,7 +15,7 @@ export const About = () => (
   <LWithFooter>
     <Header type="dark" />
     <WrapContent>
-      <h1 className={css.title}>About</h1>
+      <TextPageTitle align="center">About</TextPageTitle>
 
       <div className={css.content}>
         <p className={css.text}>
@@ -27,7 +27,7 @@ export const About = () => (
           est laborum.
         </p>
 
-        <p className={css.projectTitle}>Projektteam</p>
+        <h2 className={css.projectTitle}>Projektteam</h2>
       </div>
 
       <div className={css.aboutWrap}>

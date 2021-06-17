@@ -11,17 +11,6 @@
   }
 }
 
-.title {
-  margin: 0 0 30px;
-  font-size: 60px;
-  font-family: var(--font-secondary);
-  text-align: center;
-
-  @include mediaMaxMd {
-    font-size: 32px;
-  }
-}
-
 .content {
   display: grid;
   grid-template-columns: 350px 1fr;

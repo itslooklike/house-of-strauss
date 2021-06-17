@@ -7,7 +7,7 @@ import css from './Museum.module.scss'
 export const Museum = () => (
   <LWithFooter>
     <Header />
-    <div className={css.hero}>Exhibition</div>
+    <h1 className={css.hero}>Exhibition</h1>
     <PageContent title="The King of Waltz, Johann Strauss II, was arguably the world‘s first pop star">
       <div className={css.content}>
         <p>Dive into the story of the Strauss dynasty while their legacy comes alive around you.</p>
