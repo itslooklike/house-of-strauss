@@ -1,5 +1,7 @@
 # house-of-strauss
 
+![Site Screenshot](./images/screen-1.png)
+
 - Typescript
 - NextJS
 - Atomic Design

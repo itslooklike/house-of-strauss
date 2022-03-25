@@ -1,5 +1,5 @@
 module.exports = {
-  syntax: 'scss',
+  customSyntax: '@stylelint/postcss-css-in-js',
   plugins: ['stylelint-scss'],
   extends: ['stylelint-config-recommended', 'stylelint-config-rational-order'],
   rules: {
